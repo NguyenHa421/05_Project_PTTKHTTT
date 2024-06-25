@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Candidate\C_AppliedCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Candidate\C_Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Candidate\C_JobDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Candidate\C_JobList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Candidate\C_RegisterAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Confirm_Delete.cs">
@@ -13,10 +25,28 @@
     <Compile Update="MainBase.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Personnel\P_AddCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personnel\P_AddRecruitment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personnel\P_CandidateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Personnel\P_CompanyList.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Personnel\P_ExpiredContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Personnel\P_Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personnel\P_Recruitment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personnel\P_UpdateCadidateProfile.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
