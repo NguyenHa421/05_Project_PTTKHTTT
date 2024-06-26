@@ -55,5 +55,8 @@
     <Compile Update="Personnel\P_UpdateCadidateProfile.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Success.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
