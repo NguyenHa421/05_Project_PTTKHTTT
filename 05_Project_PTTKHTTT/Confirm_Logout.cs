@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _05_Project_PTTKHTTT.Candidate
+namespace _05_Project_PTTKHTTT
 {
-    public partial class C_JobList : Form
+    public partial class Confirm_Logout : Form
     {
-        public C_JobList()
+        public Confirm_Logout()
         {
             InitializeComponent();
         }
+
     }
 }

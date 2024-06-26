@@ -19,3 +19,17 @@ D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0
 D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.MainBase.resources
 D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_Homepage.resources
 D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Candidate.C_Homepage.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Candidate.C_AppliedCV.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Candidate.C_JobDetail.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Candidate.C_RegisterAccount.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Candidate.C_ViewJob.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Confirm_Delete.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Confirm_Logout.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Confirm_Update.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddCompany.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitment.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_CandidateProfile.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_CompanyList.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_ExpiredContract.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_Recruitment.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateCadidateProfile.resources

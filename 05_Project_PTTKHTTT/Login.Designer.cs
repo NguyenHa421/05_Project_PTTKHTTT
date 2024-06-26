@@ -38,10 +38,12 @@
             bt_login = new Button();
             bt_register = new Button();
             pn_line = new Panel();
+            pic_logo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pic_Exit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_main).BeginInit();
             pn_user.SuspendLayout();
             pn_pass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_logo).BeginInit();
             SuspendLayout();
             // 
             // pic_Exit
@@ -157,6 +159,16 @@
             pn_line.Size = new Size(321, 20);
             pn_line.TabIndex = 9;
             // 
+            // pic_logo
+            // 
+            pic_logo.Image = Properties.Resources.Logo_Reg1;
+            pic_logo.Location = new Point(42, 42);
+            pic_logo.Name = "pic_logo";
+            pic_logo.Size = new Size(146, 54);
+            pic_logo.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_logo.TabIndex = 10;
+            pic_logo.TabStop = false;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -164,6 +176,7 @@
             BackColor = Color.White;
             BackgroundImage = Properties.Resources.Background1;
             ClientSize = new Size(957, 590);
+            Controls.Add(pic_logo);
             Controls.Add(pn_line);
             Controls.Add(bt_register);
             Controls.Add(bt_login);
@@ -182,6 +195,7 @@
             pn_user.PerformLayout();
             pn_pass.ResumeLayout(false);
             pn_pass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -198,5 +212,6 @@
         private Button bt_login;
         private Button bt_register;
         private Panel pn_line;
+        private PictureBox pic_logo;
     }
 }

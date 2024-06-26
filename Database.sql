@@ -1,3 +1,5 @@
+use master
+go
 drop database if exists QL5_HoSoUngTuyenABC
 
 create database QL5_HoSoUngTuyenABC
@@ -38,7 +40,7 @@ create table PhieuDangKyQuangCao
 create table HoaDon
 (
 	MaDangKy char(10) unique,
-	TongChiPhi decimal(20,2) not null,
+	TongChiPhi money not null,
 	SoDot int not null,
 	SoThuTuDot int,
 	ThuNgan char(10) not null,
@@ -49,7 +51,7 @@ create table HinhThucDangTuyen
 	MaHinhThuc char(10) unique not null,
 	TenHinhThuc nvarchar(30) unique not null,
 	DonViTinh nvarchar(20) not null,
-	DonGia decimal(20,2) not null,
+	DonGia money not null,
 	primary key(MaHinhThuc)
 )
 create table BaiDang
@@ -89,7 +91,7 @@ create table ThanhVien
 (
 	MaThanhVien char(10) unique not null,
 	HoTen nvarchar(50) not null,
-	NamSinh date,
+	NamSinh int,
 	SoDienThoai varchar(15) not null,
 	DiaChi nvarchar(100) not null,
 	Email varchar(50) not null,

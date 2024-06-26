@@ -1,6 +1,6 @@
-﻿namespace _05_Project_PTTKHTTT.Personnel
+﻿namespace _05_Project_PTTKHTTT.Candidate
 {
-    partial class P_CompanyList
+    partial class C_ViewJob
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,12 @@
             lb_Info = new Label();
             ptn_refresh = new PictureBox();
             btn_search = new Button();
-            btn_add = new Button();
+            btn_detail = new Button();
             dtGrid_companyList = new DataGridView();
             tb_compName = new TextBox();
-            lb_name = new Label();
+            lb_nameComp = new Label();
+            tb_job = new TextBox();
+            lb_nameJob = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).BeginInit();
@@ -44,18 +46,20 @@
             // 
             // pn_parents
             // 
+            pn_parents.Controls.Add(tb_job);
+            pn_parents.Controls.Add(lb_nameJob);
             pn_parents.Controls.Add(btn_back);
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Controls.Add(ptn_refresh);
             pn_parents.Controls.Add(btn_search);
-            pn_parents.Controls.Add(btn_add);
+            pn_parents.Controls.Add(btn_detail);
             pn_parents.Controls.Add(dtGrid_companyList);
             pn_parents.Controls.Add(tb_compName);
-            pn_parents.Controls.Add(lb_name);
+            pn_parents.Controls.Add(lb_nameComp);
             pn_parents.Location = new Point(0, 0);
             pn_parents.Name = "pn_parents";
             pn_parents.Size = new Size(895, 425);
-            pn_parents.TabIndex = 0;
+            pn_parents.TabIndex = 1;
             // 
             // btn_back
             // 
@@ -65,7 +69,7 @@
             btn_back.FlatStyle = FlatStyle.Flat;
             btn_back.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btn_back.ForeColor = SystemColors.Window;
-            btn_back.Location = new Point(764, 376);
+            btn_back.Location = new Point(798, 376);
             btn_back.Name = "btn_back";
             btn_back.Size = new Size(91, 38);
             btn_back.TabIndex = 121;
@@ -78,14 +82,14 @@
             lb_Info.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lb_Info.Location = new Point(328, 10);
             lb_Info.Name = "lb_Info";
-            lb_Info.Size = new Size(264, 31);
+            lb_Info.Size = new Size(205, 31);
             lb_Info.TabIndex = 120;
-            lb_Info.Text = "Thông tin doanh nghiệp";
+            lb_Info.Text = "Thông tin việc làm";
             // 
             // ptn_refresh
             // 
             ptn_refresh.Image = Properties.Resources.refresh_buttons;
-            ptn_refresh.Location = new Point(704, 55);
+            ptn_refresh.Location = new Point(742, 55);
             ptn_refresh.Name = "ptn_refresh";
             ptn_refresh.Size = new Size(49, 39);
             ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
@@ -100,58 +104,77 @@
             btn_search.FlatStyle = FlatStyle.Flat;
             btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btn_search.ForeColor = SystemColors.Window;
-            btn_search.Location = new Point(764, 55);
+            btn_search.Location = new Point(798, 55);
             btn_search.Name = "btn_search";
             btn_search.Size = new Size(91, 38);
             btn_search.TabIndex = 118;
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
             // 
-            // btn_add
+            // btn_detail
             // 
-            btn_add.BackColor = Color.White;
-            btn_add.BackgroundImage = Properties.Resources.button_round21;
-            btn_add.FlatAppearance.BorderSize = 0;
-            btn_add.FlatStyle = FlatStyle.Flat;
-            btn_add.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_add.ForeColor = SystemColors.Window;
-            btn_add.Location = new Point(632, 376);
-            btn_add.Name = "btn_add";
-            btn_add.Size = new Size(91, 38);
-            btn_add.TabIndex = 117;
-            btn_add.Text = "Tạo mới";
-            btn_add.UseVisualStyleBackColor = false;
+            btn_detail.BackColor = Color.White;
+            btn_detail.BackgroundImage = Properties.Resources.button_round21;
+            btn_detail.FlatAppearance.BorderSize = 0;
+            btn_detail.FlatStyle = FlatStyle.Flat;
+            btn_detail.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_detail.ForeColor = SystemColors.Window;
+            btn_detail.Location = new Point(645, 376);
+            btn_detail.Name = "btn_detail";
+            btn_detail.Size = new Size(91, 38);
+            btn_detail.TabIndex = 117;
+            btn_detail.Text = "Chi tiết";
+            btn_detail.UseVisualStyleBackColor = false;
             // 
             // dtGrid_companyList
             // 
             dtGrid_companyList.BackgroundColor = SystemColors.Control;
             dtGrid_companyList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGrid_companyList.Location = new Point(39, 105);
+            dtGrid_companyList.Location = new Point(5, 100);
             dtGrid_companyList.Name = "dtGrid_companyList";
             dtGrid_companyList.RowHeadersWidth = 51;
-            dtGrid_companyList.Size = new Size(816, 262);
+            dtGrid_companyList.Size = new Size(886, 267);
             dtGrid_companyList.TabIndex = 116;
             // 
             // tb_compName
             // 
             tb_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_compName.Location = new Point(204, 58);
+            tb_compName.Location = new Point(166, 58);
             tb_compName.Name = "tb_compName";
-            tb_compName.Size = new Size(483, 34);
+            tb_compName.Size = new Size(256, 34);
             tb_compName.TabIndex = 115;
             tb_compName.TabStop = false;
             // 
-            // lb_name
+            // lb_nameComp
             // 
-            lb_name.AutoSize = true;
-            lb_name.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_name.Location = new Point(39, 61);
-            lb_name.Name = "lb_name";
-            lb_name.Size = new Size(168, 28);
-            lb_name.TabIndex = 114;
-            lb_name.Text = "Tên doanh nghiệp";
+            lb_nameComp.AutoSize = true;
+            lb_nameComp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_nameComp.Location = new Point(0, 61);
+            lb_nameComp.Name = "lb_nameComp";
+            lb_nameComp.Size = new Size(168, 28);
+            lb_nameComp.TabIndex = 114;
+            lb_nameComp.Text = "Tên doanh nghiệp";
             // 
-            // P_CompanyList
+            // tb_job
+            // 
+            tb_job.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_job.Location = new Point(557, 58);
+            tb_job.Name = "tb_job";
+            tb_job.Size = new Size(179, 34);
+            tb_job.TabIndex = 123;
+            tb_job.TabStop = false;
+            // 
+            // lb_nameJob
+            // 
+            lb_nameJob.AutoSize = true;
+            lb_nameJob.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_nameJob.Location = new Point(438, 61);
+            lb_nameJob.Name = "lb_nameJob";
+            lb_nameJob.Size = new Size(120, 28);
+            lb_nameJob.TabIndex = 122;
+            lb_nameJob.Text = "Tìm việc làm";
+            // 
+            // C_ViewJob
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -159,9 +182,9 @@
             ClientSize = new Size(895, 425);
             Controls.Add(pn_parents);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "P_CompanyList";
+            Name = "C_ViewJob";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "P_CompanyList";
+            Text = "C_JobList";
             pn_parents.ResumeLayout(false);
             pn_parents.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).EndInit();
@@ -172,13 +195,15 @@
         #endregion
 
         private Panel pn_parents;
+        private TextBox tb_job;
+        private Label lb_nameJob;
         private Button btn_back;
         private Label lb_Info;
         private PictureBox ptn_refresh;
         private Button btn_search;
-        private Button btn_add;
+        private Button btn_detail;
         private DataGridView dtGrid_companyList;
         private TextBox tb_compName;
-        private Label lb_name;
+        private Label lb_nameComp;
     }
 }

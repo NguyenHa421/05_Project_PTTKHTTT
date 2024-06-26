@@ -10,13 +10,19 @@
     <Compile Update="Candidate\C_JobDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Candidate\C_JobList.cs">
+    <Compile Update="Candidate\C_ViewJob.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Candidate\C_RegisterAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Confirm_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Confirm_Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Confirm_Update.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
