@@ -35,8 +35,8 @@
             pn_user = new Panel();
             pn_pass = new Panel();
             tb_pass = new TextBox();
-            bt_login = new Button();
-            bt_register = new Button();
+            btn_login = new Button();
+            btn_register = new Button();
             pn_line = new Panel();
             pic_logo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pic_Exit).BeginInit();
@@ -121,35 +121,35 @@
             tb_pass.TabIndex = 1;
             tb_pass.TabStop = false;
             // 
-            // bt_login
+            // btn_login
             // 
-            bt_login.BackgroundImage = Properties.Resources.b_r;
-            bt_login.BackgroundImageLayout = ImageLayout.Zoom;
-            bt_login.FlatAppearance.BorderSize = 0;
-            bt_login.FlatStyle = FlatStyle.Flat;
-            bt_login.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt_login.ForeColor = Color.White;
-            bt_login.Location = new Point(623, 369);
-            bt_login.Name = "bt_login";
-            bt_login.Size = new Size(165, 65);
-            bt_login.TabIndex = 7;
-            bt_login.Text = "Đăng nhập";
-            bt_login.UseVisualStyleBackColor = true;
+            btn_login.BackgroundImage = Properties.Resources.b_r;
+            btn_login.BackgroundImageLayout = ImageLayout.Zoom;
+            btn_login.FlatAppearance.BorderSize = 0;
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_login.ForeColor = Color.White;
+            btn_login.Location = new Point(623, 369);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(165, 65);
+            btn_login.TabIndex = 7;
+            btn_login.Text = "Đăng nhập";
+            btn_login.UseVisualStyleBackColor = true;
             // 
-            // bt_register
+            // btn_register
             // 
-            bt_register.BackgroundImage = Properties.Resources.button_regis;
-            bt_register.BackgroundImageLayout = ImageLayout.Zoom;
-            bt_register.FlatAppearance.BorderSize = 0;
-            bt_register.FlatStyle = FlatStyle.Flat;
-            bt_register.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt_register.ForeColor = Color.White;
-            bt_register.Location = new Point(591, 491);
-            bt_register.Name = "bt_register";
-            bt_register.Size = new Size(230, 45);
-            bt_register.TabIndex = 8;
-            bt_register.Text = "Tạo tài khoản mới";
-            bt_register.UseVisualStyleBackColor = true;
+            btn_register.BackgroundImage = Properties.Resources.button_regis;
+            btn_register.BackgroundImageLayout = ImageLayout.Zoom;
+            btn_register.FlatAppearance.BorderSize = 0;
+            btn_register.FlatStyle = FlatStyle.Flat;
+            btn_register.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_register.ForeColor = Color.White;
+            btn_register.Location = new Point(591, 491);
+            btn_register.Name = "btn_register";
+            btn_register.Size = new Size(230, 45);
+            btn_register.TabIndex = 8;
+            btn_register.Text = "Tạo tài khoản mới";
+            btn_register.UseVisualStyleBackColor = true;
             // 
             // pn_line
             // 
@@ -178,8 +178,8 @@
             ClientSize = new Size(957, 590);
             Controls.Add(pic_logo);
             Controls.Add(pn_line);
-            Controls.Add(bt_register);
-            Controls.Add(bt_login);
+            Controls.Add(btn_register);
+            Controls.Add(btn_login);
             Controls.Add(pn_pass);
             Controls.Add(pn_user);
             Controls.Add(pic_main);
@@ -209,8 +209,8 @@
         private Panel pn_user;
         private Panel pn_pass;
         private TextBox tb_pass;
-        private Button bt_login;
-        private Button bt_register;
+        private Button btn_login;
+        private Button btn_register;
         private Panel pn_line;
         private PictureBox pic_logo;
     }
