@@ -30,7 +30,6 @@
         {
             lb_tax = new Label();
             tb_email = new TextBox();
-            this.tb_tax = new TextBox();
             lb_manager = new Label();
             tb_manager = new TextBox();
             tb_address = new TextBox();
@@ -61,15 +60,6 @@
             tb_email.Size = new Size(668, 34);
             tb_email.TabIndex = 264;
             tb_email.TabStop = false;
-            // 
-            // tb_tax
-            // 
-            this.tb_tax.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.tb_tax.Location = new Point(197, 145);
-            this.tb_tax.Name = "tb_tax";
-            this.tb_tax.Size = new Size(236, 34);
-            this.tb_tax.TabIndex = 263;
-            this.tb_tax.TabStop = false;
             // 
             // lb_manager
             // 
@@ -186,7 +176,6 @@
             ClientSize = new Size(895, 425);
             Controls.Add(lb_tax);
             Controls.Add(tb_email);
-            Controls.Add(this.tb_tax);
             Controls.Add(lb_manager);
             Controls.Add(tb_manager);
             Controls.Add(tb_address);
