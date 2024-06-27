@@ -40,6 +40,7 @@
             btn_Back = new Button();
             lb_email = new Label();
             lb_Info = new Label();
+            tb_tax = new TextBox();
             SuspendLayout();
             // 
             // lb_tax
@@ -168,6 +169,15 @@
             lb_Info.TabIndex = 249;
             lb_Info.Text = "Đăng ký doanh nghiệp";
             // 
+            // tb_tax
+            // 
+            tb_tax.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_tax.Location = new Point(197, 145);
+            tb_tax.Name = "tb_tax";
+            tb_tax.Size = new Size(254, 34);
+            tb_tax.TabIndex = 260;
+            tb_tax.TabStop = false;
+            // 
             // P_AddCompany
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -177,6 +187,7 @@
             Controls.Add(lb_tax);
             Controls.Add(tb_email);
             Controls.Add(lb_manager);
+            Controls.Add(tb_tax);
             Controls.Add(tb_manager);
             Controls.Add(tb_address);
             Controls.Add(tb_name);
@@ -213,5 +224,6 @@
         private Label lb_amount;
         private Label lb_state;
         private Label lb_Info;
+        private TextBox tb_tax;
     }
 }

@@ -35,12 +35,12 @@
             lb_Info = new Label();
             ptn_refresh = new PictureBox();
             btn_search = new Button();
-            dtGrid_companyList = new DataGridView();
+            dtGrid_jobList = new DataGridView();
             tb_compName = new TextBox();
             lb_nameComp = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtGrid_jobList).BeginInit();
             SuspendLayout();
             // 
             // pn_parents
@@ -51,7 +51,7 @@
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Controls.Add(ptn_refresh);
             pn_parents.Controls.Add(btn_search);
-            pn_parents.Controls.Add(dtGrid_companyList);
+            pn_parents.Controls.Add(dtGrid_jobList);
             pn_parents.Controls.Add(tb_compName);
             pn_parents.Controls.Add(lb_nameComp);
             pn_parents.Location = new Point(0, 0);
@@ -128,15 +128,15 @@
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
             // 
-            // dtGrid_companyList
+            // dtGrid_jobList
             // 
-            dtGrid_companyList.BackgroundColor = SystemColors.Control;
-            dtGrid_companyList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGrid_companyList.Location = new Point(5, 100);
-            dtGrid_companyList.Name = "dtGrid_companyList";
-            dtGrid_companyList.RowHeadersWidth = 51;
-            dtGrid_companyList.Size = new Size(886, 267);
-            dtGrid_companyList.TabIndex = 116;
+            dtGrid_jobList.BackgroundColor = SystemColors.Control;
+            dtGrid_jobList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtGrid_jobList.Location = new Point(5, 100);
+            dtGrid_jobList.Name = "dtGrid_jobList";
+            dtGrid_jobList.RowHeadersWidth = 51;
+            dtGrid_jobList.Size = new Size(886, 267);
+            dtGrid_jobList.TabIndex = 116;
             // 
             // tb_compName
             // 
@@ -171,7 +171,7 @@
             pn_parents.ResumeLayout(false);
             pn_parents.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtGrid_jobList).EndInit();
             ResumeLayout(false);
         }
 
@@ -184,7 +184,7 @@
         private Label lb_Info;
         private PictureBox ptn_refresh;
         private Button btn_search;
-        private DataGridView dtGrid_companyList;
+        private DataGridView dtGrid_jobList;
         private TextBox tb_compName;
         private Label lb_nameComp;
     }

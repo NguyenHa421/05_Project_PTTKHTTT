@@ -30,10 +30,10 @@
         {
             pn_parent = new Panel();
             pn_findwork = new Panel();
-            btn_findwork = new Button();
+            btn_findjob = new Button();
             pic_findwork = new PictureBox();
             pn_apply = new Panel();
-            btn_apply = new Button();
+            btn_applied = new Button();
             pic_apply = new PictureBox();
             pn_parent.SuspendLayout();
             pn_findwork.SuspendLayout();
@@ -57,26 +57,26 @@
             pn_findwork.BackColor = Color.White;
             pn_findwork.BackgroundImage = Properties.Resources.Bg_icon;
             pn_findwork.BackgroundImageLayout = ImageLayout.Zoom;
-            pn_findwork.Controls.Add(btn_findwork);
+            pn_findwork.Controls.Add(btn_findjob);
             pn_findwork.Controls.Add(pic_findwork);
             pn_findwork.Location = new Point(116, 79);
             pn_findwork.Name = "pn_findwork";
             pn_findwork.Size = new Size(234, 244);
             pn_findwork.TabIndex = 4;
             // 
-            // btn_findwork
+            // btn_findjob
             // 
-            btn_findwork.BackgroundImage = Properties.Resources.button_2;
-            btn_findwork.BackgroundImageLayout = ImageLayout.Zoom;
-            btn_findwork.FlatStyle = FlatStyle.Flat;
-            btn_findwork.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_findwork.ForeColor = Color.White;
-            btn_findwork.Location = new Point(25, 183);
-            btn_findwork.Name = "btn_findwork";
-            btn_findwork.Size = new Size(177, 45);
-            btn_findwork.TabIndex = 1;
-            btn_findwork.Text = "Tìm việc";
-            btn_findwork.UseVisualStyleBackColor = true;
+            btn_findjob.BackgroundImage = Properties.Resources.button_2;
+            btn_findjob.BackgroundImageLayout = ImageLayout.Zoom;
+            btn_findjob.FlatStyle = FlatStyle.Flat;
+            btn_findjob.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_findjob.ForeColor = Color.White;
+            btn_findjob.Location = new Point(25, 183);
+            btn_findjob.Name = "btn_findjob";
+            btn_findjob.Size = new Size(177, 45);
+            btn_findjob.TabIndex = 1;
+            btn_findjob.Text = "Tìm việc";
+            btn_findjob.UseVisualStyleBackColor = true;
             // 
             // pic_findwork
             // 
@@ -93,26 +93,26 @@
             pn_apply.BackColor = Color.White;
             pn_apply.BackgroundImage = Properties.Resources.Bg_icon;
             pn_apply.BackgroundImageLayout = ImageLayout.Zoom;
-            pn_apply.Controls.Add(btn_apply);
+            pn_apply.Controls.Add(btn_applied);
             pn_apply.Controls.Add(pic_apply);
             pn_apply.Location = new Point(515, 79);
             pn_apply.Name = "pn_apply";
             pn_apply.Size = new Size(234, 244);
             pn_apply.TabIndex = 5;
             // 
-            // btn_apply
+            // btn_applied
             // 
-            btn_apply.BackgroundImage = Properties.Resources.button_2;
-            btn_apply.BackgroundImageLayout = ImageLayout.Zoom;
-            btn_apply.FlatStyle = FlatStyle.Flat;
-            btn_apply.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_apply.ForeColor = Color.White;
-            btn_apply.Location = new Point(28, 183);
-            btn_apply.Name = "btn_apply";
-            btn_apply.Size = new Size(177, 45);
-            btn_apply.TabIndex = 1;
-            btn_apply.Text = "Tình trạng hồ sơ";
-            btn_apply.UseVisualStyleBackColor = true;
+            btn_applied.BackgroundImage = Properties.Resources.button_2;
+            btn_applied.BackgroundImageLayout = ImageLayout.Zoom;
+            btn_applied.FlatStyle = FlatStyle.Flat;
+            btn_applied.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_applied.ForeColor = Color.White;
+            btn_applied.Location = new Point(28, 183);
+            btn_applied.Name = "btn_applied";
+            btn_applied.Size = new Size(177, 45);
+            btn_applied.TabIndex = 1;
+            btn_applied.Text = "Tình trạng hồ sơ";
+            btn_applied.UseVisualStyleBackColor = true;
             // 
             // pic_apply
             // 
@@ -147,10 +147,10 @@
 
         private Panel pn_parent;
         private Panel pn_findwork;
-        private Button btn_findwork;
+        private Button btn_findjob;
         private PictureBox pic_findwork;
         private Panel pn_apply;
-        private Button btn_apply;
+        private Button btn_applied;
         private PictureBox pic_apply;
     }
 }
