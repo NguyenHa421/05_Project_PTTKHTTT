@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _05_Project_PTTKHTTT.Personnel
 {
-    public partial class P_UpdateCadidateProfile : Form
+    public partial class P_AddRecruitmentDetail : Form
     {
-        public P_UpdateCadidateProfile()
+        public P_AddRecruitmentDetail()
         {
             InitializeComponent();
         }

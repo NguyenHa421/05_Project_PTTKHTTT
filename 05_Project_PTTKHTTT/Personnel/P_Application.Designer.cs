@@ -1,6 +1,6 @@
 ﻿namespace _05_Project_PTTKHTTT.Personnel
 {
-    partial class P_CandidateProfile
+    partial class P_Application
     {
         /// <summary>
         /// Required designer variable.

@@ -33,3 +33,4 @@ D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0
 D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_ExpiredContract.resources
 D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_Recruitment.resources
 D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateCadidateProfile.resources
+D:\Tài liệu\Năm 3-2\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Success.resources

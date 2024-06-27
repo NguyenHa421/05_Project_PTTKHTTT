@@ -1,6 +1,6 @@
 ﻿namespace _05_Project_PTTKHTTT.Personnel
 {
-    partial class P_UpdateCadidateProfile
+    partial class P_UpdateApplication
     {
         /// <summary>
         /// Required designer variable.
@@ -204,7 +204,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "P_UpdateCadidateProfile";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "P_UpdateCadidateProfile";
+            Text = "P_UpdateApplication";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -215,7 +215,6 @@
         private Label lb_cost;
         private TextBox textBox2;
         private Label label2;
-        private ComboBox cbB_state;
         private ComboBox cbB_state;
         private DateTimePicker dt_date;
         private Label lb_nameCandidate;
