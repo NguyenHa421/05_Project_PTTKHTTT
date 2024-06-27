@@ -1,6 +1,6 @@
 ﻿namespace _05_Project_PTTKHTTT.Personnel
 {
-    partial class P_CandidateProfile
+    partial class P_Application
     {
         /// <summary>
         /// Required designer variable.
@@ -34,12 +34,12 @@
             lb_Info = new Label();
             ptn_refresh = new PictureBox();
             btn_search = new Button();
-            dtGrid_CandidateCV = new DataGridView();
+            dtGrid_application = new DataGridView();
             tb_compName = new TextBox();
             lb_compName = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dtGrid_CandidateCV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtGrid_application).BeginInit();
             SuspendLayout();
             // 
             // pn_parents
@@ -49,7 +49,7 @@
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Controls.Add(ptn_refresh);
             pn_parents.Controls.Add(btn_search);
-            pn_parents.Controls.Add(dtGrid_CandidateCV);
+            pn_parents.Controls.Add(dtGrid_application);
             pn_parents.Controls.Add(tb_compName);
             pn_parents.Controls.Add(lb_compName);
             pn_parents.Location = new Point(0, 0);
@@ -122,15 +122,15 @@
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
             // 
-            // dtGrid_CandidateCV
+            // dtGrid_application
             // 
-            dtGrid_CandidateCV.BackgroundColor = SystemColors.Control;
-            dtGrid_CandidateCV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGrid_CandidateCV.Location = new Point(32, 100);
-            dtGrid_CandidateCV.Name = "dtGrid_CandidateCV";
-            dtGrid_CandidateCV.RowHeadersWidth = 51;
-            dtGrid_CandidateCV.Size = new Size(834, 267);
-            dtGrid_CandidateCV.TabIndex = 116;
+            dtGrid_application.BackgroundColor = SystemColors.Control;
+            dtGrid_application.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtGrid_application.Location = new Point(32, 100);
+            dtGrid_application.Name = "dtGrid_application";
+            dtGrid_application.RowHeadersWidth = 51;
+            dtGrid_application.Size = new Size(834, 267);
+            dtGrid_application.TabIndex = 116;
             // 
             // tb_compName
             // 
@@ -165,7 +165,7 @@
             pn_parents.ResumeLayout(false);
             pn_parents.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dtGrid_CandidateCV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtGrid_application).EndInit();
             ResumeLayout(false);
         }
 
@@ -177,7 +177,7 @@
         private Label lb_Info;
         private PictureBox ptn_refresh;
         private Button btn_search;
-        private DataGridView dtGrid_CandidateCV;
+        private DataGridView dtGrid_application;
         private TextBox tb_compName;
         private Label lb_compName;
     }

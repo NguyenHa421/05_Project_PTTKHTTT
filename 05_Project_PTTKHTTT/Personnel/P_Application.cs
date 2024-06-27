@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace _05_Project_PTTKHTTT.Personnel
 {
-    public partial class P_AddRecruitment : Form
+    public partial class P_Application : Form
     {
-        public P_AddRecruitment()
+        public P_Application()
         {
             InitializeComponent();
-        }
-
-        private void btn_confirm_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

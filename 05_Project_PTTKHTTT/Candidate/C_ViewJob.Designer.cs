@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             pn_parents = new Panel();
+            tb_job = new TextBox();
+            lb_nameJob = new Label();
             btn_back = new Button();
             lb_Info = new Label();
             ptn_refresh = new PictureBox();
             btn_search = new Button();
             btn_detail = new Button();
-            dtGrid_companyList = new DataGridView();
+            dtGrid_jobList = new DataGridView();
             tb_compName = new TextBox();
             lb_nameComp = new Label();
-            tb_job = new TextBox();
-            lb_nameJob = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtGrid_jobList).BeginInit();
             SuspendLayout();
             // 
             // pn_parents
@@ -53,13 +53,32 @@
             pn_parents.Controls.Add(ptn_refresh);
             pn_parents.Controls.Add(btn_search);
             pn_parents.Controls.Add(btn_detail);
-            pn_parents.Controls.Add(dtGrid_companyList);
+            pn_parents.Controls.Add(dtGrid_jobList);
             pn_parents.Controls.Add(tb_compName);
             pn_parents.Controls.Add(lb_nameComp);
             pn_parents.Location = new Point(0, 0);
             pn_parents.Name = "pn_parents";
             pn_parents.Size = new Size(895, 425);
             pn_parents.TabIndex = 1;
+            // 
+            // tb_job
+            // 
+            tb_job.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_job.Location = new Point(557, 58);
+            tb_job.Name = "tb_job";
+            tb_job.Size = new Size(179, 34);
+            tb_job.TabIndex = 123;
+            tb_job.TabStop = false;
+            // 
+            // lb_nameJob
+            // 
+            lb_nameJob.AutoSize = true;
+            lb_nameJob.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_nameJob.Location = new Point(438, 61);
+            lb_nameJob.Name = "lb_nameJob";
+            lb_nameJob.Size = new Size(120, 28);
+            lb_nameJob.TabIndex = 122;
+            lb_nameJob.Text = "Tìm việc làm";
             // 
             // btn_back
             // 
@@ -126,15 +145,15 @@
             btn_detail.Text = "Chi tiết";
             btn_detail.UseVisualStyleBackColor = false;
             // 
-            // dtGrid_companyList
+            // dtGrid_jobList
             // 
-            dtGrid_companyList.BackgroundColor = SystemColors.Control;
-            dtGrid_companyList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGrid_companyList.Location = new Point(5, 100);
-            dtGrid_companyList.Name = "dtGrid_companyList";
-            dtGrid_companyList.RowHeadersWidth = 51;
-            dtGrid_companyList.Size = new Size(886, 267);
-            dtGrid_companyList.TabIndex = 116;
+            dtGrid_jobList.BackgroundColor = SystemColors.Control;
+            dtGrid_jobList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtGrid_jobList.Location = new Point(5, 100);
+            dtGrid_jobList.Name = "dtGrid_jobList";
+            dtGrid_jobList.RowHeadersWidth = 51;
+            dtGrid_jobList.Size = new Size(886, 267);
+            dtGrid_jobList.TabIndex = 116;
             // 
             // tb_compName
             // 
@@ -155,25 +174,6 @@
             lb_nameComp.TabIndex = 114;
             lb_nameComp.Text = "Tên doanh nghiệp";
             // 
-            // tb_job
-            // 
-            tb_job.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_job.Location = new Point(557, 58);
-            tb_job.Name = "tb_job";
-            tb_job.Size = new Size(179, 34);
-            tb_job.TabIndex = 123;
-            tb_job.TabStop = false;
-            // 
-            // lb_nameJob
-            // 
-            lb_nameJob.AutoSize = true;
-            lb_nameJob.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_nameJob.Location = new Point(438, 61);
-            lb_nameJob.Name = "lb_nameJob";
-            lb_nameJob.Size = new Size(120, 28);
-            lb_nameJob.TabIndex = 122;
-            lb_nameJob.Text = "Tìm việc làm";
-            // 
             // C_ViewJob
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -188,7 +188,7 @@
             pn_parents.ResumeLayout(false);
             pn_parents.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtGrid_jobList).EndInit();
             ResumeLayout(false);
         }
 
@@ -202,7 +202,7 @@
         private PictureBox ptn_refresh;
         private Button btn_search;
         private Button btn_detail;
-        private DataGridView dtGrid_companyList;
+        private DataGridView dtGrid_jobList;
         private TextBox tb_compName;
         private Label lb_nameComp;
     }

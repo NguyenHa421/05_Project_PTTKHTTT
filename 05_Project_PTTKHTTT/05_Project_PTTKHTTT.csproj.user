@@ -7,6 +7,9 @@
     <Compile Update="Candidate\C_Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Candidate\C_JobContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Candidate\C_JobDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -37,7 +40,10 @@
     <Compile Update="Personnel\P_AddRecruitment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Personnel\P_CandidateProfile.cs">
+    <Compile Update="Personnel\P_AddRecruitmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personnel\P_Application.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Personnel\P_CompanyList.cs">
@@ -52,7 +58,7 @@
     <Compile Update="Personnel\P_Recruitment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Personnel\P_UpdateCadidateProfile.cs">
+    <Compile Update="Personnel\P_UpdateApplication.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Success.cs">
