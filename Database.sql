@@ -12,11 +12,11 @@ go
 create table DoanhNghiep
 (
 	MaDoanhNghiep char(10) unique not null,
-	TenDoanhNgiep nvarchar(100) not null,
+	TenDoanhNghiep nvarchar(100) not null,
 	MaSoThue varchar(15) unique not null,
 	NguoiDaiDien nvarchar(50) not null,
 	DiaChi nvarchar(100) not null,
-	Email varchar(50) not null,
+	Email varchar(100) not null,
 	primary key(MaDoanhNghiep)
 )
 create table NhanVien
@@ -26,7 +26,7 @@ create table NhanVien
 	NgaySinh date not null,
 	DienThoai varchar(15) not null,
 	DiaChi nvarchar(100) not null,
-	Email varchar(50) not null,
+	Email varchar(100) not null,
 	primary key(MaNhanVien)
 )
 create table PhieuDangKyQuangCao
@@ -49,8 +49,8 @@ create table HoaDon
 create table HinhThucDangTuyen
 (
 	MaHinhThuc char(10) unique not null,
-	TenHinhThuc nvarchar(30) unique not null,
-	DonViTinh nvarchar(20) not null,
+	TenHinhThuc nvarchar(100) unique not null,
+	DonViTinh nvarchar(50) not null,
 	DonGia money not null,
 	primary key(MaHinhThuc)
 )
@@ -58,9 +58,9 @@ create table BaiDang
 (
 	MaDangKy char(10) unique,
 	MaHinhThuc char(10) unique,
-	NoiDung nvarchar(100) not null,
+	NoiDung nvarchar(1000) not null,
 	NgayDang date not null,
-	TrangThai nvarchar(30) not null,
+	TrangThai nvarchar(50) not null,
 	NhanVienThucHien char(10) not null,
 	primary key(MaDangKy, MaHinhThuc)
 )
@@ -82,9 +82,9 @@ create table ChiTietGiaHan
 create table ThongTinDangTuyen
 (
 	MaDangKy char(10),
-	TenViTri nvarchar(50) not null,
+	TenViTri nvarchar(100) not null,
 	SoLuong int,
-	TieuChi nvarchar(300) not null,
+	TieuChi nvarchar(500) not null,
 	primary key(MaDangKy, TenViTri)
 )
 create table ThanhVien
@@ -94,7 +94,7 @@ create table ThanhVien
 	NamSinh int,
 	SoDienThoai varchar(15) not null,
 	DiaChi nvarchar(100) not null,
-	Email varchar(50) not null,
+	Email varchar(100) not null,
 	primary key(MaThanhVien)
 )
 create table HoSo
@@ -102,14 +102,14 @@ create table HoSo
 	MaHoSo char(10) unique not null,
 	MaThanhVien char(10) not null,
 	MaDangKy char(10) not null,
-	TenViTri nvarchar(50) not null,
-	TrangThai nvarchar(30) not null,
+	TenViTri nvarchar(100) not null,
+	TrangThai nvarchar(50) not null,
 	primary key(MaHoSo)
 )
 create table ChiTietBangCap
 (	
 	MaHoSo char(10) not null,
-	TenBangCap nvarchar(50) not null,
+	TenBangCap nvarchar(100) not null,
 	primary key(MaHoSo, TenBangCap)
 )
 --Khoa ngoai
