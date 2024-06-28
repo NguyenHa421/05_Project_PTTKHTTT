@@ -22,7 +22,7 @@ create table DoanhNghiep
 	TenDoanhNghiep nvarchar(100) not null,
 	MaSoThue varchar(15) unique not null,
 	NguoiDaiDien nvarchar(50) not null,
-	DiaChi nvarchar(100) not null,
+	DiaChi nvarchar(200) not null,
 	Email varchar(100) not null,
 	primary key(MaDoanhNghiep)
 )
@@ -46,12 +46,12 @@ create table PhieuDangKyQuangCao
 )
 create table HoaDon
 (
-	MaDangKy char(10) unique,
+	MaDangKy char(10) not null,
 	TongChiPhi money not null,
 	SoDot int not null,
 	SoThuTuDot int,
 	ThuNgan char(10) not null,
-	primary key(MaDangKy)
+	primary key(MaDangKy, SoThuTuDot)
 )
 create table HinhThucDangTuyen
 (
