@@ -63,8 +63,8 @@ create table HinhThucDangTuyen
 )
 create table BaiDang
 (
-	MaDangKy char(10) unique,
-	MaHinhThuc char(10) unique,
+	MaDangKy char(10) not null,
+	MaHinhThuc char(10) not null,
 	NoiDung nvarchar(1000) not null,
 	NgayDang date not null,
 	TrangThai nvarchar(50) not null,
@@ -80,11 +80,11 @@ create table DanhSachGiaHan
 )
 create table ChiTietGiaHan
 (
-	MaDanhSach char(10),
-	MaDangKy char(10),
+	MaDanhSach char(10) not null,
+	MaDangKy char(10) not null,
 	NgayHetHan date,
 	ThongTinUuDai nvarchar(100),
-	primary key (MaDanhSach)
+	primary key (MaDanhSach, MaDangKy)
 )
 create table ThongTinDangTuyen
 (
