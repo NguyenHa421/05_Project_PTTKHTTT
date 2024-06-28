@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _05_Project_PTTKHTTT.Candidate
 {
-    public partial class C_JobContent : Form
+    public partial class C_JobContents : Form
     {
-        public C_JobContent()
+        public C_JobContents()
         {
             InitializeComponent();
         }
