@@ -1,12 +1,19 @@
 use master
 go
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'QL5_HoSoUngTuyenABC')
+BEGIN
+    ALTER DATABASE QL5_HoSoUngTuyenABC
+    SET SINGLE_USER 
+    WITH ROLLBACK IMMEDIATE;
+
+    DROP DATABASE QL5_HoSoUngTuyenABC;
+END 
+
 drop database if exists QL5_HoSoUngTuyenABC
 
 create database QL5_HoSoUngTuyenABC
 go
-
 use QL5_HoSoUngTuyenABC
-go
 
 --Tao bang
 create table DoanhNghiep
@@ -182,3 +189,4 @@ alter table ChiTietBangCap
 add constraint FK_CTBC_HS
 foreign key(MaHoSo)
 references HoSo(MaHoSo)
+
