@@ -35,7 +35,13 @@ namespace _05_Project_PTTKHTTT
         }
         private void pic_Logout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            using (Confirm_Logout confirm = new Confirm_Logout())
+            {
+                if (confirm.ShowDialog() == DialogResult.OK)
+                {
+                        this.Close();
+                }
+            }
         }
     }
 }
