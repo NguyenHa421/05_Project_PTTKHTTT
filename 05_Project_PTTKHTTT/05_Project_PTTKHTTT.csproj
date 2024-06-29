@@ -24,4 +24,12 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BUS_PTTKHTTT\" />
+  </ItemGroup>
+
 </Project>
