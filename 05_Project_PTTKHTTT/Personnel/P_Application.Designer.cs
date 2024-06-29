@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             pn_parents = new Panel();
+            cbB_compName = new ComboBox();
             btn_update = new Button();
             btn_back = new Button();
             lb_Info = new Label();
             ptn_refresh = new PictureBox();
             btn_search = new Button();
             dtGrid_application = new DataGridView();
-            tb_compName = new TextBox();
             lb_compName = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
@@ -44,18 +44,28 @@
             // 
             // pn_parents
             // 
+            pn_parents.Controls.Add(cbB_compName);
             pn_parents.Controls.Add(btn_update);
             pn_parents.Controls.Add(btn_back);
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Controls.Add(ptn_refresh);
             pn_parents.Controls.Add(btn_search);
             pn_parents.Controls.Add(dtGrid_application);
-            pn_parents.Controls.Add(tb_compName);
             pn_parents.Controls.Add(lb_compName);
             pn_parents.Location = new Point(0, 0);
             pn_parents.Name = "pn_parents";
             pn_parents.Size = new Size(895, 425);
             pn_parents.TabIndex = 4;
+            // 
+            // cbB_compName
+            // 
+            cbB_compName.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbB_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbB_compName.FormattingEnabled = true;
+            cbB_compName.Location = new Point(206, 51);
+            cbB_compName.Name = "cbB_compName";
+            cbB_compName.Size = new Size(496, 36);
+            cbB_compName.TabIndex = 124;
             // 
             // btn_update
             // 
@@ -71,6 +81,7 @@
             btn_update.TabIndex = 123;
             btn_update.Text = "Cập nhật";
             btn_update.UseVisualStyleBackColor = false;
+            btn_update.Click += btn_update_Click;
             // 
             // btn_back
             // 
@@ -86,6 +97,7 @@
             btn_back.TabIndex = 121;
             btn_back.Text = "Quay lại";
             btn_back.UseVisualStyleBackColor = false;
+            btn_back.Click += btn_back_Click;
             // 
             // lb_Info
             // 
@@ -100,12 +112,13 @@
             // ptn_refresh
             // 
             ptn_refresh.Image = Properties.Resources.refresh_buttons;
-            ptn_refresh.Location = new Point(708, 52);
+            ptn_refresh.Location = new Point(711, 48);
             ptn_refresh.Name = "ptn_refresh";
             ptn_refresh.Size = new Size(49, 39);
             ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
             ptn_refresh.TabIndex = 119;
             ptn_refresh.TabStop = false;
+            ptn_refresh.Click += ptn_refresh_Click;
             // 
             // btn_search
             // 
@@ -115,12 +128,13 @@
             btn_search.FlatStyle = FlatStyle.Flat;
             btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btn_search.ForeColor = SystemColors.Window;
-            btn_search.Location = new Point(775, 52);
+            btn_search.Location = new Point(775, 49);
             btn_search.Name = "btn_search";
             btn_search.Size = new Size(91, 38);
             btn_search.TabIndex = 118;
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // dtGrid_application
             // 
@@ -131,15 +145,7 @@
             dtGrid_application.RowHeadersWidth = 51;
             dtGrid_application.Size = new Size(834, 267);
             dtGrid_application.TabIndex = 116;
-            // 
-            // tb_compName
-            // 
-            tb_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_compName.Location = new Point(198, 54);
-            tb_compName.Name = "tb_compName";
-            tb_compName.Size = new Size(494, 34);
-            tb_compName.TabIndex = 115;
-            tb_compName.TabStop = false;
+            dtGrid_application.CellContentClick += dtGrid_application_CellContentClick;
             // 
             // lb_compName
             // 
@@ -151,7 +157,7 @@
             lb_compName.TabIndex = 114;
             lb_compName.Text = "Tên doanh nghiệp";
             // 
-            // P_CandidateProfile
+            // P_Application
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -159,7 +165,7 @@
             ClientSize = new Size(895, 425);
             Controls.Add(pn_parents);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "P_CandidateProfile";
+            Name = "P_Application";
             StartPosition = FormStartPosition.CenterParent;
             Text = "P_CandidateProfile";
             pn_parents.ResumeLayout(false);
@@ -178,7 +184,7 @@
         private PictureBox ptn_refresh;
         private Button btn_search;
         private DataGridView dtGrid_application;
-        private TextBox tb_compName;
         private Label lb_compName;
+        private ComboBox cbB_compName;
     }
 }
