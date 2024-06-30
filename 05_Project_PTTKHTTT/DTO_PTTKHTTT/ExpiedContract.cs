@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
 {
-    internal class Company
+    internal class ExpiredContract
     {
         public string expireID { get; set; }
         public string registerID { get; set; }
@@ -18,7 +18,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public DateTime expireDate { get; set; }
         public string preferential { get; set; }
         public string employeeID { get; set; }
-        public Company(string expireID, string registerID, string compID, string compName, DateTime createdDate, DateTime expireDate, string preferential, string employeeID)
+        public ExpiredContract(string expireID, string registerID, string compID, string compName, DateTime createdDate, DateTime expireDate, string preferential, string employeeID)
         {
             this.expireID = expireID;
             this.registerID = registerID;
@@ -29,7 +29,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.preferential = preferential;
             this.employeeID = employeeID;
         }
-        public Company(DataRow row)
+        public ExpiredContract(DataRow row)
         {
             this.expireID = row["MaDanhSach"].ToString();
             this.registerID = row["MaDangKy"].ToString();
@@ -41,17 +41,9 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.employeeID = row["NhanVienLap"].ToString();
         }
 
-        public static bool AddCompany(Company newCompany)
+        public static List<DTO_PTTKHTTT.ExpiredContract> SearchExpiredContract(string compName, string listDelete)
         {
-            return CompanyDAO.Instance.AddCompany(newCompany);
-        }
-        public static List<Company> GetCompanyList()
-        {
-            return CompanyDAO.Instance.GetCompanyList();
-        }
-        public static List<Company> SearchCompany(string compName)
-        {
-            return CompanyDAO.Instance.SearchCompany(compName);
+            return ExpiredContractDAO.Instance.SearchExpiredContract(compName, listDelete);
         }
     }
 }
