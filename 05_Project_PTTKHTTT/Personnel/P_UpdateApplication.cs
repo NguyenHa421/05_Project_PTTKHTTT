@@ -1,4 +1,4 @@
-﻿using _05_Project_PTTKHTTT.BUS_PTTKHTTT;
+﻿using _05_Project_PTTKHTTT.DTO_PTTKHTTT;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,13 +13,13 @@ namespace _05_Project_PTTKHTTT.Personnel
 {
     public partial class P_UpdateApplication : Form
     {
-        public P_UpdateApplication(string applicationID, string regID, string compName, string candiID, string candiName, string vacancy, string state)
+        public P_UpdateApplication(string applicationID, string regID, string compName, string candiID, string candiName, string vacancy, string stateNow)
         {
             InitializeComponent();
-            Load(applicationID, regID, compName, candiID, candiName, vacancy, state);
             LoadComboBox();
+            Load(applicationID, regID, compName, candiID, candiName, vacancy, stateNow);
         }
-        private void Load(string applicationID, string regID, string compName, string candiID, string candiName, string vacancy, string state)
+        private void Load(string applicationID, string regID, string compName, string candiID, string candiName, string vacancy, string stateNow)
         {
             tb_idCV.Text = applicationID;
             tb_idRegister.Text = regID;
@@ -27,7 +27,7 @@ namespace _05_Project_PTTKHTTT.Personnel
             tb_idCandidate.Text = candiID;
             tb_nameCandidate.Text = candiName;
             tb_vacancy.Text = vacancy;
-            cbB_state.Text = state;
+            cbB_state.Text = stateNow;
         }
         private void LoadComboBox()
         {
@@ -49,7 +49,7 @@ namespace _05_Project_PTTKHTTT.Personnel
                 {
                     try
                     {
-                        ApplicationBUS.Instance.UpdateStatte(cbB_state.Text, tb_idCV.Text);
+                        DTO_PTTKHTTT.Application.UpdateStatte(cbB_state.Text, tb_idCV.Text);
                     }
                     catch(Exception ex)
                     {

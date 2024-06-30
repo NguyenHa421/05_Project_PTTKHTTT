@@ -37,6 +37,10 @@
             btn_search = new Button();
             dtGrid_application = new DataGridView();
             lb_compName = new Label();
+            lb_candidateName = new Label();
+            tb_candidateName = new TextBox();
+            tb_vancancyName = new TextBox();
+            lb_vacancyName = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_application).BeginInit();
@@ -44,6 +48,10 @@
             // 
             // pn_parents
             // 
+            pn_parents.Controls.Add(tb_vancancyName);
+            pn_parents.Controls.Add(lb_vacancyName);
+            pn_parents.Controls.Add(tb_candidateName);
+            pn_parents.Controls.Add(lb_candidateName);
             pn_parents.Controls.Add(cbB_compName);
             pn_parents.Controls.Add(btn_update);
             pn_parents.Controls.Add(btn_back);
@@ -60,11 +68,11 @@
             // cbB_compName
             // 
             cbB_compName.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbB_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbB_compName.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbB_compName.FormattingEnabled = true;
-            cbB_compName.Location = new Point(206, 51);
+            cbB_compName.Location = new Point(206, 90);
             cbB_compName.Name = "cbB_compName";
-            cbB_compName.Size = new Size(496, 36);
+            cbB_compName.Size = new Size(496, 33);
             cbB_compName.TabIndex = 124;
             // 
             // btn_update
@@ -103,7 +111,7 @@
             // 
             lb_Info.AutoSize = true;
             lb_Info.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_Info.Location = new Point(293, 10);
+            lb_Info.Location = new Point(293, 7);
             lb_Info.Name = "lb_Info";
             lb_Info.Size = new Size(280, 31);
             lb_Info.TabIndex = 120;
@@ -112,7 +120,7 @@
             // ptn_refresh
             // 
             ptn_refresh.Image = Properties.Resources.refresh_buttons;
-            ptn_refresh.Location = new Point(711, 48);
+            ptn_refresh.Location = new Point(711, 87);
             ptn_refresh.Name = "ptn_refresh";
             ptn_refresh.Size = new Size(49, 39);
             ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
@@ -128,7 +136,7 @@
             btn_search.FlatStyle = FlatStyle.Flat;
             btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btn_search.ForeColor = SystemColors.Window;
-            btn_search.Location = new Point(775, 49);
+            btn_search.Location = new Point(775, 88);
             btn_search.Name = "btn_search";
             btn_search.Size = new Size(91, 38);
             btn_search.TabIndex = 118;
@@ -140,10 +148,10 @@
             // 
             dtGrid_application.BackgroundColor = SystemColors.Control;
             dtGrid_application.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGrid_application.Location = new Point(32, 100);
+            dtGrid_application.Location = new Point(32, 134);
             dtGrid_application.Name = "dtGrid_application";
             dtGrid_application.RowHeadersWidth = 51;
-            dtGrid_application.Size = new Size(834, 267);
+            dtGrid_application.Size = new Size(834, 233);
             dtGrid_application.TabIndex = 116;
             dtGrid_application.CellContentClick += dtGrid_application_CellContentClick;
             // 
@@ -151,11 +159,49 @@
             // 
             lb_compName.AutoSize = true;
             lb_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_compName.Location = new Point(32, 57);
+            lb_compName.Location = new Point(32, 96);
             lb_compName.Name = "lb_compName";
             lb_compName.Size = new Size(168, 28);
             lb_compName.TabIndex = 114;
             lb_compName.Text = "Tên doanh nghiệp";
+            // 
+            // lb_candidateName
+            // 
+            lb_candidateName.AutoSize = true;
+            lb_candidateName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_candidateName.Location = new Point(32, 50);
+            lb_candidateName.Name = "lb_candidateName";
+            lb_candidateName.Size = new Size(122, 28);
+            lb_candidateName.TabIndex = 125;
+            lb_candidateName.Text = "Tên ứng viên";
+            // 
+            // tb_candidateName
+            // 
+            tb_candidateName.Font = new Font("Segoe UI", 10.8F);
+            tb_candidateName.Location = new Point(206, 47);
+            tb_candidateName.Name = "tb_candidateName";
+            tb_candidateName.Size = new Size(275, 31);
+            tb_candidateName.TabIndex = 126;
+            tb_candidateName.TabStop = false;
+            // 
+            // tb_vancancyName
+            // 
+            tb_vancancyName.Font = new Font("Segoe UI", 10.8F);
+            tb_vancancyName.Location = new Point(600, 47);
+            tb_vancancyName.Name = "tb_vancancyName";
+            tb_vancancyName.Size = new Size(266, 31);
+            tb_vancancyName.TabIndex = 128;
+            tb_vancancyName.TabStop = false;
+            // 
+            // lb_vacancyName
+            // 
+            lb_vacancyName.AutoSize = true;
+            lb_vacancyName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_vacancyName.Location = new Point(509, 50);
+            lb_vacancyName.Name = "lb_vacancyName";
+            lb_vacancyName.Size = new Size(85, 28);
+            lb_vacancyName.TabIndex = 127;
+            lb_vacancyName.Text = "Tên vị trí";
             // 
             // P_Application
             // 
@@ -186,5 +232,10 @@
         private DataGridView dtGrid_application;
         private Label lb_compName;
         private ComboBox cbB_compName;
+        private ComboBox comboBox1;
+        private Label lb_candidateName;
+        private TextBox tb_candidateName;
+        private TextBox tb_vancancyName;
+        private Label lb_vacancyName;
     }
 }

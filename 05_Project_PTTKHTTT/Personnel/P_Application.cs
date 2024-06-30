@@ -1,6 +1,4 @@
-﻿using _05_Project_PTTKHTTT.BUS_PTTKHTTT;
-using _05_Project_PTTKHTTT.DTO_PTTKHTTT;
-using _05_Project_PTTKHTTT.DAO_PTTKHTTT;
+﻿using _05_Project_PTTKHTTT.DTO_PTTKHTTT;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +15,7 @@ namespace _05_Project_PTTKHTTT.Personnel
     {
         BindingSource applicationList = new BindingSource();
         int clickedRow = 0;
-        List<ApplicationDTO> application;
+        List<DTO_PTTKHTTT.Application> application;
         public P_Application()
         {
             InitializeComponent();
@@ -26,6 +24,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         }
         private void LoadComboBox()
         {
+            cbB_compName.Items.Add("All");
             cbB_compName.Items.Add("NGÂN HÀNG TMCP NGOẠI THƯƠNG VIỆT NAM");
             cbB_compName.Items.Add("tập");
             //List<CompanyDTO> companies = CompanyDAO.Instance.GetCompanyList();
@@ -36,7 +35,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         private void LoadGrid()
         {
             dtGrid_application.DataSource = applicationList;
-            application = ApplicationBUS.Instance.GetApplicationList();
+            application = DTO_PTTKHTTT.Application.GetApplicationList();
             applicationList.DataSource = application;
         }
         private Form currentFormChild;
@@ -62,15 +61,18 @@ namespace _05_Project_PTTKHTTT.Personnel
 
         private void ptn_refresh_Click(object sender, EventArgs e)
         {
+            tb_vancancyName.Clear();
+            tb_candidateName.Clear();
+            cbB_compName.Text = "All";
             dtGrid_application.DataSource = applicationList;
-            application = ApplicationBUS.Instance.GetApplicationList();
+            application = DTO_PTTKHTTT.Application.GetApplicationList();
             applicationList.DataSource = application;
         }
 
         private void btn_search_Click(object sender, EventArgs e)
         {
             dtGrid_application.DataSource = applicationList;
-            application = ApplicationBUS.Instance.SearchApplicationn(cbB_compName.Text);
+            application = DTO_PTTKHTTT.Application.SearchApplicationn(cbB_compName.Text, tb_vancancyName.Text, tb_candidateName.Text);
             applicationList.DataSource = application;
         }
 
@@ -86,7 +88,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         {
             if (clickedRow >= 0)
             {
-                OpenChildForm(new Personnel.P_UpdateApplication(application[clickedRow].applicationID, application[clickedRow].registerID, application[clickedRow].compName, application[clickedRow].candID, application[clickedRow].candName, application[clickedRow].vancancyName, application[clickedRow].state));
+                OpenChildForm(new Personnel.P_UpdateApplication(application[clickedRow].applicationID, application[clickedRow].registerID, application[clickedRow].compName, application[clickedRow].candidateID, application[clickedRow].candidateName, application[clickedRow].vancancyName, application[clickedRow].stateNow));
             }
         }
     }

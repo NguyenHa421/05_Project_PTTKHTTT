@@ -1,5 +1,4 @@
-﻿using _05_Project_PTTKHTTT.BUS_PTTKHTTT;
-using _05_Project_PTTKHTTT.DTO_PTTKHTTT;
+﻿using _05_Project_PTTKHTTT.DTO_PTTKHTTT;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,16 +14,16 @@ namespace _05_Project_PTTKHTTT.Candidate
     public partial class C_AppliedCV : Form
     {
         BindingSource applicationList = new BindingSource();
-        List<ApplicationDTO> application;
         public C_AppliedCV()
         {
             InitializeComponent();
+            LoadGrid();
         }
         private void LoadGrid()
         {
             dtGrid_jobList.DataSource = applicationList;
-            application = ApplicationBUS.Instance.CandidateGetApplicationList("TV018");
-            applicationList.DataSource = application;
+            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateGetApplicationList("TV018");
+            
         }
         private void btn_back_Click(object sender, EventArgs e)
         {
@@ -33,14 +32,18 @@ namespace _05_Project_PTTKHTTT.Candidate
 
         private void ptn_refresh_Click(object sender, EventArgs e)
         {
+            tb_compName.Clear();
+            tb_job.Clear();
             dtGrid_jobList.DataSource = applicationList;
-            application = ApplicationBUS.Instance.CandidateGetApplicationList("TV018");
-            applicationList.DataSource = application;
+            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateGetApplicationList("TV018");
+            
         }
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-           
+            dtGrid_jobList.DataSource = applicationList;
+            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateSearchApplicationn("TV018", tb_compName.Text, tb_job.Text);
+            
         }
     }
 }

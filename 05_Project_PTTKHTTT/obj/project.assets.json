@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSI USER\\.nuget\\packages\\": {}
+    "C:\\Users\\Thu Ha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
+      "projectUniqueName": "D:\\Tài liệu\\Năm 3-2\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
       "projectName": "05_Project_PTTKHTTT",
-      "projectPath": "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
-      "packagesPath": "C:\\Users\\MSI USER\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\obj\\",
+      "projectPath": "D:\\Tài liệu\\Năm 3-2\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
+      "packagesPath": "C:\\Users\\Thu Ha\\.nuget\\packages\\",
+      "outputPath": "D:\\Tài liệu\\Năm 3-2\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MSI USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Thu Ha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
