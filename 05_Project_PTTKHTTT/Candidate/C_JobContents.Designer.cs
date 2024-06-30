@@ -74,6 +74,7 @@
             btn_next.TabIndex = 254;
             btn_next.Text = "Tiếp";
             btn_next.UseVisualStyleBackColor = false;
+            btn_next.Click += btn_next_Click;
             // 
             // btn_Back
             // 
@@ -89,6 +90,7 @@
             btn_Back.TabIndex = 253;
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // lb_content
             // 
@@ -110,7 +112,7 @@
             lb_Info.TabIndex = 249;
             lb_Info.Text = "Nội dung bài đăng tuyển dụng";
             // 
-            // C_JobDetail
+            // C_JobContents
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -118,7 +120,7 @@
             ClientSize = new Size(895, 425);
             Controls.Add(pn_parents);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "C_JobDetail";
+            Name = "C_JobContents";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "C_JobDetail";
             pn_parents.ResumeLayout(false);
@@ -131,13 +133,7 @@
         private Panel pn_parents;
         private Label lb_criteria;
         private TextBox tb_content;
-        private TextBox tb_criteria;
         private Label lb_postdate;
-        private TextBox tb_state;
-        private TextBox tb_postdate;
-        private TextBox tb_amount;
-        private TextBox tb_jobName;
-        private TextBox tb_compName;
         private Label lb_jobName;
         private Label lb_compName;
         private Button btn_next;
