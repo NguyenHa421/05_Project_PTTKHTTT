@@ -61,10 +61,10 @@
             // 
             // tb_job
             // 
-            tb_job.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_job.Location = new Point(529, 58);
+            tb_job.Font = new Font("Segoe UI", 10.8F);
+            tb_job.Location = new Point(529, 59);
             tb_job.Name = "tb_job";
-            tb_job.Size = new Size(207, 34);
+            tb_job.Size = new Size(207, 31);
             tb_job.TabIndex = 123;
             tb_job.TabStop = false;
             // 
@@ -92,6 +92,7 @@
             btn_back.TabIndex = 121;
             btn_back.Text = "Quay lại";
             btn_back.UseVisualStyleBackColor = false;
+            btn_back.Click += btn_back_Click;
             // 
             // lb_Info
             // 
@@ -112,6 +113,7 @@
             ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
             ptn_refresh.TabIndex = 119;
             ptn_refresh.TabStop = false;
+            ptn_refresh.Click += ptn_refresh_Click;
             // 
             // btn_search
             // 
@@ -127,6 +129,7 @@
             btn_search.TabIndex = 118;
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // dtGrid_jobList
             // 
@@ -140,10 +143,10 @@
             // 
             // tb_compName
             // 
-            tb_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_compName.Location = new Point(168, 58);
+            tb_compName.Font = new Font("Segoe UI", 10.8F);
+            tb_compName.Location = new Point(168, 59);
             tb_compName.Name = "tb_compName";
-            tb_compName.Size = new Size(256, 34);
+            tb_compName.Size = new Size(256, 31);
             tb_compName.TabIndex = 115;
             tb_compName.TabStop = false;
             // 
