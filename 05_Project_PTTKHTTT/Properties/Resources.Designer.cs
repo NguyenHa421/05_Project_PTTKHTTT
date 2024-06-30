@@ -273,6 +273,16 @@ namespace _05_Project_PTTKHTTT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye {
+            get {
+                object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Home_Pic1 {
             get {
                 object obj = ResourceManager.GetObject("Home_Pic1", resourceCulture);
@@ -426,6 +436,16 @@ namespace _05_Project_PTTKHTTT.Properties {
         internal static System.Drawing.Bitmap search_vacancy {
             get {
                 object obj = ResourceManager.GetObject("search_vacancy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visual {
+            get {
+                object obj = ResourceManager.GetObject("visual", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -43,5 +43,14 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return AccountDAO.Instance.GetRole(usrname);
         }
+        public static string GetMaxID()
+        {
+            return AccountDAO.Instance.GetMaxID();
+        }
+        public static bool AddAccountTV(string pwd)
+        {
+            string usrname = GetMaxID();
+            return AccountDAO.Instance.AddAccountTV(usrname, pwd);
+        }
     }
 }

@@ -23,7 +23,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         public string Role { get; set; }
         public bool login(string usrname, string pwd)
         {
-            string query = string.Format("select COUNT(*) from Accounts where Username = '{0}' and Password = '{1}'", usrname, pwd);
+            string query = string.Format("select * from Accounts where Username = '{0}' and Password = '{1}'", usrname, pwd);
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
             return result.Rows.Count > 0;
         }
@@ -46,6 +46,18 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             string query = string.Format("select Role from Accounts where Username = '{0}'", usrname);
             object result = DataProvider.Instance.ExecuteScalar(query, new object[] { usrname });
             return result.ToString();
+        }
+        public string GetMaxID()
+        {
+            string query = string.Format("select MAX(MaThanhVien) from ThanhVien");
+            object result = DataProvider.Instance.ExecuteScalar(query);
+            return result.ToString();
+        }
+        public bool AddAccountTV(string usrname, string pwd)
+        {
+            string query = string.Format("insert into Accounts(Username, Password, Role) values ('{0}','{1}','{2}')", usrname, pwd, "ThanhVien");
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
         }
     }
 }
