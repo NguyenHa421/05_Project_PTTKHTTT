@@ -15,6 +15,11 @@ namespace _05_Project_PTTKHTTT.Candidate
         public C_ViewJob()
         {
             InitializeComponent();
+            LoadGrid();
+        }
+        void LoadGrid()
+        {
+
         }
     }
 }
