@@ -17,7 +17,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public string candidateName { get; set; } = string.Empty;
         public string vancancyName {  get; set; }
         public string stateNow { get; set; }
-        public Application(string applicationID, string regID, string compName, string candID, string candName, string vancancyName, string state)
+        public Application(string applicationID, string regID, string candID, string vancancyName, string candName = null, string compName = null, string state = null)
         {
             this.applicationID = applicationID;
             this.registerID = regID;
@@ -59,7 +59,24 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         }
         public static bool AddApplication(Application newApply)
         {
+            string curAppCounter = ApplicationDAO.Instance.GetCurrentCounter();
+            string newID = CreateNewID(curAppCounter);
+            newApply.applicationID = newID;
             return ApplicationDAO.Instance.AddApplication(newApply);
+        }
+        private static string CreateNewID(string curCounter)
+        {
+            string counter = curCounter.Substring(2);
+            int newCounter = int.Parse(counter) + 1;
+            string result = "HS";
+            if (newCounter < 100)
+            {
+                result += "0";
+                if (newCounter < 10)
+                    result += "0";
+            }
+            result += newCounter.ToString();
+            return result;
         }
     }
 }

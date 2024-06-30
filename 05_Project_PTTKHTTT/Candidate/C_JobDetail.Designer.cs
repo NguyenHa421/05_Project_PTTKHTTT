@@ -160,6 +160,7 @@
             btn_apply.TabIndex = 271;
             btn_apply.Text = "Ứng tuyển";
             btn_apply.UseVisualStyleBackColor = false;
+            btn_apply.Click += btn_apply_Click;
             // 
             // btn_Back
             // 

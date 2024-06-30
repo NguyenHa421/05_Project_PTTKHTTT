@@ -17,7 +17,8 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public string content { get; set; }
         public DateTime postdate { get; set; }
         public string state { get; set; }
-        public PostedJob(string compName, string jobName, int quantity, string criteria, string content, DateTime postdate, string state)
+        public string regID { get; set; }
+        public PostedJob(string compName, string jobName, int quantity, string criteria, string content, DateTime postdate, string state, string regID)
         {
             this.compName = compName;
             this.jobName = jobName;
@@ -26,6 +27,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.content = content;
             this.postdate = postdate;
             this.state = state;
+            this.regID = regID;
         }
         public PostedJob(DataRow row)
         {
@@ -36,6 +38,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.content = row["NoiDung"].ToString();
             this.postdate = (DateTime)row["NgayDang"];
             this.state = row["TrangThai"].ToString();
+            this.regID = row["MaDangKy"].ToString();
         }
         public static List<PostedJob> GetPostedJobList()
         {

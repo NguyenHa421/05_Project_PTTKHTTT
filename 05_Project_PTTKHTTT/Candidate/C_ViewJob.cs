@@ -27,6 +27,7 @@ namespace _05_Project_PTTKHTTT.Candidate
             dtGrid_jobList.DataSource = postedJobBinding;
             postedJobs = PostedJob.GetPostedJobList();
             postedJobBinding.DataSource = postedJobs;
+            dtGrid_jobList.Columns["regID"].Visible = false;
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)

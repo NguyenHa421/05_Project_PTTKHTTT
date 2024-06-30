@@ -2,6 +2,7 @@ namespace _05_Project_PTTKHTTT
 {
     public partial class Login : Form
     {
+        public static string username;
         public Login()
         {
             InitializeComponent();
