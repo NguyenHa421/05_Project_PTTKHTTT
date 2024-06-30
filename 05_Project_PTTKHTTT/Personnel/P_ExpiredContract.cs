@@ -18,7 +18,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         BindingSource expiredContractList = new BindingSource();
         int clickedRow = -1;
         string listDelete = "('0', '0')";
-        List<ExpiredContractDTO> expiredContracts;
+        List<CompanyDTO> expiredContracts;
         public P_ExpiredContract()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         private void LoadGrid()
         {
             dtGrid_expiredComp.DataSource = expiredContractList;
-            expiredContracts = ExpiredContractDAO.Instance.GetExpiredContracList();
+            expiredContracts = CompanyDTO.SearchCompany("", listDelete);
             expiredContractList.DataSource = expiredContracts;
         }
         private Form currentFormChild;
@@ -47,31 +47,19 @@ namespace _05_Project_PTTKHTTT.Personnel
             childForm.Show();
         }
 
-        private void btn_back_Click(object sender, EventArgs e)
+        private void btn_back_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void ptn_refresh_Click(object sender, EventArgs e)
-        {
-            expiredContracts = ExpiredContractDAO.Instance.SearchxpiredContracList("", listDelete);
-            expiredContractList.DataSource = expiredContracts;
-        }
-
-        private void btn_search_Click(object sender, EventArgs e)
-        {
-            expiredContracts = ExpiredContractDAO.Instance.SearchxpiredContracList(tb_compName.Text, listDelete);
-            expiredContractList.DataSource = expiredContracts;
-        }
-
-        private void btn_restore_Click(object sender, EventArgs e)
+        private void btn_restore_Click_1(object sender, EventArgs e)
         {
             listDelete = "('0', '0')";
-            expiredContracts = ExpiredContractDAO.Instance.SearchxpiredContracList(tb_compName.Text, listDelete);
+            expiredContracts = CompanyDTO.SearchCompany(tb_compName.Text, listDelete);
             expiredContractList.DataSource = expiredContracts;
         }
 
-        private void btn_delete_Click(object sender, EventArgs e)
+        private void btn_delete_Click_1(object sender, EventArgs e)
         {
             if (clickedRow < 0)
                 return;
@@ -83,8 +71,8 @@ namespace _05_Project_PTTKHTTT.Personnel
                     {
                         listDelete += ',';
                     }
-                    listDelete += "('" + expiredContracts[clickedRow].expireID + "','" + expiredContracts[clickedRow].registerID + "')" ;
-                    expiredContracts = ExpiredContractDAO.Instance.SearchxpiredContracList(tb_compName.Text, listDelete);
+                    listDelete += "('" + expiredContracts[clickedRow].expireID + "','" + expiredContracts[clickedRow].registerID + "')";
+                    expiredContracts = CompanyDTO.SearchCompany(tb_compName.Text, listDelete);
                     expiredContractList.DataSource = expiredContracts;
                     Success success = new Success();
                     success.ShowDialog();
@@ -92,21 +80,27 @@ namespace _05_Project_PTTKHTTT.Personnel
             }
         }
 
-        private void btn_print_Click(object sender, EventArgs e)
+        private void btn_print_Click_1(object sender, EventArgs e)
         {
-            using (Confirm_Delete confirm = new Confirm_Delete())
-            {
-                if (confirm.ShowDialog() == DialogResult.OK)
-                {
-                    Success success = new Success();
-                    success.ShowDialog();
-                }
-            }
+            Success success = new Success();
+            success.ShowDialog();
         }
 
-        private void dtGrid_expiredComp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ptn_refresh_Click_1(object sender, EventArgs e)
         {
-            if (e.RowIndex >=0 && e.ColumnIndex >=0) 
+            expiredContracts = CompanyDTO.SearchCompany("", listDelete);
+            expiredContractList.DataSource = expiredContracts;
+        }
+
+        private void btn_search_Click_1(object sender, EventArgs e)
+        {
+            expiredContracts = CompanyDTO.SearchCompany(tb_compName.Text, listDelete);
+            expiredContractList.DataSource = expiredContracts;
+        }
+
+        private void dtGrid_expiredComp_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 clickedRow = e.RowIndex;
             }
