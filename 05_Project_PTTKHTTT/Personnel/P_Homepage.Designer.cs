@@ -59,8 +59,9 @@
             panel1.Controls.Add(pn_cv);
             panel1.Controls.Add(pn_contract);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(895, 425);
+            panel1.Size = new Size(783, 319);
             panel1.TabIndex = 0;
             // 
             // pn_Enterprise
@@ -70,9 +71,10 @@
             pn_Enterprise.BackgroundImageLayout = ImageLayout.Zoom;
             pn_Enterprise.Controls.Add(btn_Enterprise);
             pn_Enterprise.Controls.Add(pic_Enterprise);
-            pn_Enterprise.Location = new Point(36, 35);
+            pn_Enterprise.Location = new Point(32, 26);
+            pn_Enterprise.Margin = new Padding(3, 2, 3, 2);
             pn_Enterprise.Name = "pn_Enterprise";
-            pn_Enterprise.Size = new Size(170, 170);
+            pn_Enterprise.Size = new Size(149, 128);
             pn_Enterprise.TabIndex = 4;
             // 
             // btn_Enterprise
@@ -82,19 +84,22 @@
             btn_Enterprise.FlatStyle = FlatStyle.Flat;
             btn_Enterprise.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Enterprise.ForeColor = Color.White;
-            btn_Enterprise.Location = new Point(13, 119);
+            btn_Enterprise.Location = new Point(11, 89);
+            btn_Enterprise.Margin = new Padding(3, 2, 3, 2);
             btn_Enterprise.Name = "btn_Enterprise";
-            btn_Enterprise.Size = new Size(144, 38);
+            btn_Enterprise.Size = new Size(126, 28);
             btn_Enterprise.TabIndex = 1;
             btn_Enterprise.Text = "Doanh nghiệp";
             btn_Enterprise.UseVisualStyleBackColor = true;
+            btn_Enterprise.Click += btn_Enterprise_Click;
             // 
             // pic_Enterprise
             // 
             pic_Enterprise.Image = Properties.Resources.enterprise;
-            pic_Enterprise.Location = new Point(41, 22);
+            pic_Enterprise.Location = new Point(36, 16);
+            pic_Enterprise.Margin = new Padding(3, 2, 3, 2);
             pic_Enterprise.Name = "pic_Enterprise";
-            pic_Enterprise.Size = new Size(91, 82);
+            pic_Enterprise.Size = new Size(80, 62);
             pic_Enterprise.SizeMode = PictureBoxSizeMode.Zoom;
             pic_Enterprise.TabIndex = 1;
             pic_Enterprise.TabStop = false;
@@ -106,9 +111,10 @@
             pn_recruit.BackgroundImageLayout = ImageLayout.Zoom;
             pn_recruit.Controls.Add(btn_recruit);
             pn_recruit.Controls.Add(pic_recruit);
-            pn_recruit.Location = new Point(466, 35);
+            pn_recruit.Location = new Point(408, 26);
+            pn_recruit.Margin = new Padding(3, 2, 3, 2);
             pn_recruit.Name = "pn_recruit";
-            pn_recruit.Size = new Size(170, 170);
+            pn_recruit.Size = new Size(149, 128);
             pn_recruit.TabIndex = 6;
             // 
             // btn_recruit
@@ -118,19 +124,22 @@
             btn_recruit.FlatStyle = FlatStyle.Flat;
             btn_recruit.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_recruit.ForeColor = Color.White;
-            btn_recruit.Location = new Point(13, 119);
+            btn_recruit.Location = new Point(11, 89);
+            btn_recruit.Margin = new Padding(3, 2, 3, 2);
             btn_recruit.Name = "btn_recruit";
-            btn_recruit.Size = new Size(144, 38);
+            btn_recruit.Size = new Size(126, 28);
             btn_recruit.TabIndex = 1;
             btn_recruit.Text = "Đăng tuyển";
             btn_recruit.UseVisualStyleBackColor = true;
+            btn_recruit.Click += btn_recruit_Click;
             // 
             // pic_recruit
             // 
             pic_recruit.Image = Properties.Resources.recruit;
-            pic_recruit.Location = new Point(41, 22);
+            pic_recruit.Location = new Point(36, 16);
+            pic_recruit.Margin = new Padding(3, 2, 3, 2);
             pic_recruit.Name = "pic_recruit";
-            pic_recruit.Size = new Size(91, 82);
+            pic_recruit.Size = new Size(80, 62);
             pic_recruit.SizeMode = PictureBoxSizeMode.Zoom;
             pic_recruit.TabIndex = 1;
             pic_recruit.TabStop = false;
@@ -142,9 +151,10 @@
             pn_cv.BackgroundImageLayout = ImageLayout.Zoom;
             pn_cv.Controls.Add(btn_cv);
             pn_cv.Controls.Add(pic_cv);
-            pn_cv.Location = new Point(683, 35);
+            pn_cv.Location = new Point(598, 26);
+            pn_cv.Margin = new Padding(3, 2, 3, 2);
             pn_cv.Name = "pn_cv";
-            pn_cv.Size = new Size(170, 170);
+            pn_cv.Size = new Size(149, 128);
             pn_cv.TabIndex = 7;
             // 
             // btn_cv
@@ -154,19 +164,22 @@
             btn_cv.FlatStyle = FlatStyle.Flat;
             btn_cv.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_cv.ForeColor = Color.White;
-            btn_cv.Location = new Point(13, 119);
+            btn_cv.Location = new Point(11, 89);
+            btn_cv.Margin = new Padding(3, 2, 3, 2);
             btn_cv.Name = "btn_cv";
-            btn_cv.Size = new Size(144, 38);
+            btn_cv.Size = new Size(126, 28);
             btn_cv.TabIndex = 1;
             btn_cv.Text = "CV ứng viên";
             btn_cv.UseVisualStyleBackColor = true;
+            btn_cv.Click += btn_cv_Click;
             // 
             // pic_cv
             // 
             pic_cv.Image = Properties.Resources.cv;
-            pic_cv.Location = new Point(41, 22);
+            pic_cv.Location = new Point(36, 16);
+            pic_cv.Margin = new Padding(3, 2, 3, 2);
             pic_cv.Name = "pic_cv";
-            pic_cv.Size = new Size(91, 82);
+            pic_cv.Size = new Size(80, 62);
             pic_cv.SizeMode = PictureBoxSizeMode.Zoom;
             pic_cv.TabIndex = 1;
             pic_cv.TabStop = false;
@@ -178,9 +191,10 @@
             pn_contract.BackgroundImageLayout = ImageLayout.Zoom;
             pn_contract.Controls.Add(btn_contract);
             pn_contract.Controls.Add(pic_contract);
-            pn_contract.Location = new Point(250, 35);
+            pn_contract.Location = new Point(219, 26);
+            pn_contract.Margin = new Padding(3, 2, 3, 2);
             pn_contract.Name = "pn_contract";
-            pn_contract.Size = new Size(170, 170);
+            pn_contract.Size = new Size(149, 128);
             pn_contract.TabIndex = 8;
             // 
             // btn_contract
@@ -190,31 +204,35 @@
             btn_contract.FlatStyle = FlatStyle.Flat;
             btn_contract.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_contract.ForeColor = Color.White;
-            btn_contract.Location = new Point(13, 119);
+            btn_contract.Location = new Point(11, 89);
+            btn_contract.Margin = new Padding(3, 2, 3, 2);
             btn_contract.Name = "btn_contract";
-            btn_contract.Size = new Size(144, 38);
+            btn_contract.Size = new Size(126, 28);
             btn_contract.TabIndex = 1;
             btn_contract.Text = "Hợp đồng";
             btn_contract.UseVisualStyleBackColor = true;
+            btn_contract.Click += btn_contract_Click;
             // 
             // pic_contract
             // 
             pic_contract.Image = Properties.Resources.contract;
-            pic_contract.Location = new Point(41, 22);
+            pic_contract.Location = new Point(36, 16);
+            pic_contract.Margin = new Padding(3, 2, 3, 2);
             pic_contract.Name = "pic_contract";
-            pic_contract.Size = new Size(91, 82);
+            pic_contract.Size = new Size(80, 62);
             pic_contract.SizeMode = PictureBoxSizeMode.Zoom;
             pic_contract.TabIndex = 1;
             pic_contract.TabStop = false;
             // 
             // P_Homepage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(895, 425);
+            ClientSize = new Size(783, 319);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "P_Homepage";
             StartPosition = FormStartPosition.CenterParent;
             Text = "P_Homepage";

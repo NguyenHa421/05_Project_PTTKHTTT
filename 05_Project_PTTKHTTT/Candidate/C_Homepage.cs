@@ -16,5 +16,21 @@ namespace _05_Project_PTTKHTTT.Candidate
         {
             InitializeComponent();
         }
+
+        private void btn_findjob_Click(object sender, EventArgs e)
+        {
+            Candidate.C_ViewJob view_Job = new Candidate.C_ViewJob();
+            this.Hide();
+            view_Job.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_applied_Click(object sender, EventArgs e)
+        {
+            Candidate.C_AppliedCV appliedCV = new Candidate.C_AppliedCV();
+            this.Hide();
+            appliedCV.ShowDialog();
+            this.Show();
+        }
     }
 }
