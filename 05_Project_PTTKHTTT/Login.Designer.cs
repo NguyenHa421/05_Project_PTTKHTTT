@@ -135,6 +135,7 @@
             btn_login.TabIndex = 7;
             btn_login.Text = "Đăng nhập";
             btn_login.UseVisualStyleBackColor = true;
+            btn_login.Click += btn_login_Click;
             // 
             // btn_register
             // 
@@ -150,6 +151,7 @@
             btn_register.TabIndex = 8;
             btn_register.Text = "Tạo tài khoản mới";
             btn_register.UseVisualStyleBackColor = true;
+            btn_register.Click += btn_register_Click;
             // 
             // pn_line
             // 
