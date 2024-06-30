@@ -17,9 +17,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public string content { get; set; }
         public DateTime postdate { get; set; }
         public string state { get; set; }
-        public int number { get; set; }
-        public string form { get; set; }
-        public PostedJob(string compName, string jobName, int quantity, string criteria, string content, DateTime postdate, string state, int number, string form)
+        public PostedJob(string compName, string jobName, int quantity, string criteria, string content, DateTime postdate, string state)
         {
             this.compName = compName;
             this.jobName = jobName;
@@ -27,6 +25,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.criteria = criteria;
             this.content = content;
             this.postdate = postdate;
+            this.state = state;
         }
         public PostedJob(DataRow row)
         {
@@ -36,10 +35,15 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.criteria = row["TieuChi"].ToString();
             this.content = row["NoiDung"].ToString();
             this.postdate = (DateTime)row["NgayDang"];
+            this.state = row["TrangThai"].ToString();
         }
         public static List<PostedJob> GetPostedJobList()
         {
             return PostedJobDAO.Instance.GetPostedjobList();
+        }
+        public static List<PostedJob> SearchPostedJob(string compName, string jobName)
+        {
+            return PostedJobDAO.Instance.SearchPostedJob(compName, jobName);
         }
     }
 }

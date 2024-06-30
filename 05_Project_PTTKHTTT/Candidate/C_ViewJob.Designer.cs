@@ -115,6 +115,7 @@
             ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
             ptn_refresh.TabIndex = 119;
             ptn_refresh.TabStop = false;
+            ptn_refresh.Click += ptn_refresh_Click;
             // 
             // btn_search
             // 
@@ -130,6 +131,7 @@
             btn_search.TabIndex = 118;
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // btn_detail
             // 
@@ -145,6 +147,7 @@
             btn_detail.TabIndex = 117;
             btn_detail.Text = "Chi tiết";
             btn_detail.UseVisualStyleBackColor = false;
+            btn_detail.Click += btn_detail_Click;
             // 
             // dtGrid_jobList
             // 
@@ -155,6 +158,7 @@
             dtGrid_jobList.RowHeadersWidth = 51;
             dtGrid_jobList.Size = new Size(886, 267);
             dtGrid_jobList.TabIndex = 116;
+            dtGrid_jobList.CellContentClick += dtGrid_jobList_CellContentClick;
             // 
             // tb_compName
             // 

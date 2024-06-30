@@ -20,7 +20,19 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         public List<PostedJob> GetPostedjobList()
         {
             List<PostedJob> result = new List<PostedJob>();
-            string query = "select * from dbo.DoanhNghiep d, dbo.PhieuDangKyQuangCao p, dbo.BaiDang b, dbo.ThongTinDangTuyen t where d. MaDoanhNghiep = p.MaDoanhNghiep and p.MaDangKy = b.MaDangKy and p.MaDangKy = t.MaDangKy";
+            string query = "select * from dbo.DoanhNghiep d, dbo.PhieuDangKyQuangCao p, dbo.BaiDang b, dbo.ThongTinDangTuyen t where d. MaDoanhNghiep = p.MaDoanhNghiep and p.MaDangKy = b.MaDangKy and p.MaDangKy = t.MaDangKy and b.TrangThai = N'Đã đăng'";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow row in data.Rows)
+            {
+                PostedJob pj = new PostedJob(row);
+                result.Add(pj);
+            }
+            return result;
+        }
+        public List<PostedJob> SearchPostedJob(string compName, string jobname)
+        {
+            List<PostedJob> result = new List<PostedJob>();
+            string query = string.Format("select * from dbo.DoanhNghiep d, dbo.PhieuDangKyQuangCao p, dbo.BaiDang b, dbo.ThongTinDangTuyen t where d. MaDoanhNghiep = p.MaDoanhNghiep and p.MaDangKy = b.MaDangKy and p.MaDangKy = t.MaDangKy and lower(d.TenDoanhNghiep) like lower(N'%{0}%') and lower(t.TenViTri) like lower(N'%{1}%') and b.TrangThai = N'Đã đăng'", compName, jobname);
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow row in data.Rows)
             {
