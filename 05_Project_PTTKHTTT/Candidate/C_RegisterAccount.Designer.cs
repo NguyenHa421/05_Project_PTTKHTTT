@@ -246,6 +246,7 @@
             btn_confirm.TabIndex = 243;
             btn_confirm.Text = "Đăng ký";
             btn_confirm.UseVisualStyleBackColor = true;
+            btn_confirm.Click += btn_confirm_Click;
             // 
             // btn_back
             // 
@@ -261,6 +262,7 @@
             btn_back.TabIndex = 244;
             btn_back.Text = "Quay lại";
             btn_back.UseVisualStyleBackColor = true;
+            btn_back.Click += btn_back_Click;
             // 
             // C_RegisterAccount
             // 

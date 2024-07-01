@@ -34,6 +34,8 @@
             tb_user = new TextBox();
             pn_user = new Panel();
             pn_pass = new Panel();
+            pic_Show = new PictureBox();
+            pic_Hide = new PictureBox();
             tb_pass = new TextBox();
             btn_login = new Button();
             btn_register = new Button();
@@ -43,6 +45,8 @@
             ((System.ComponentModel.ISupportInitialize)pic_main).BeginInit();
             pn_user.SuspendLayout();
             pn_pass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_Show).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_Hide).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_logo).BeginInit();
             SuspendLayout();
             // 
@@ -103,11 +107,35 @@
             // pn_pass
             // 
             pn_pass.BackgroundImage = Properties.Resources.Line;
+            pn_pass.Controls.Add(pic_Show);
+            pn_pass.Controls.Add(pic_Hide);
             pn_pass.Controls.Add(tb_pass);
             pn_pass.Location = new Point(541, 278);
             pn_pass.Name = "pn_pass";
             pn_pass.Size = new Size(321, 50);
             pn_pass.TabIndex = 6;
+            // 
+            // pic_Show
+            // 
+            pic_Show.Image = Properties.Resources.visual;
+            pic_Show.Location = new Point(266, 6);
+            pic_Show.Name = "pic_Show";
+            pic_Show.Size = new Size(43, 38);
+            pic_Show.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_Show.TabIndex = 12;
+            pic_Show.TabStop = false;
+            pic_Show.Click += pic_Show_Click;
+            // 
+            // pic_Hide
+            // 
+            pic_Hide.Image = Properties.Resources.eye;
+            pic_Hide.Location = new Point(266, 6);
+            pic_Hide.Name = "pic_Hide";
+            pic_Hide.Size = new Size(43, 38);
+            pic_Hide.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_Hide.TabIndex = 11;
+            pic_Hide.TabStop = false;
+            pic_Hide.Click += pic_Hide_Click;
             // 
             // tb_pass
             // 
@@ -135,6 +163,7 @@
             btn_login.TabIndex = 7;
             btn_login.Text = "Đăng nhập";
             btn_login.UseVisualStyleBackColor = true;
+            btn_login.Click += btn_login_Click;
             // 
             // btn_register
             // 
@@ -150,6 +179,7 @@
             btn_register.TabIndex = 8;
             btn_register.Text = "Tạo tài khoản mới";
             btn_register.UseVisualStyleBackColor = true;
+            btn_register.Click += btn_register_Click;
             // 
             // pn_line
             // 
@@ -195,6 +225,8 @@
             pn_user.PerformLayout();
             pn_pass.ResumeLayout(false);
             pn_pass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_Show).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_Hide).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -213,5 +245,7 @@
         private Button btn_register;
         private Panel pn_line;
         private PictureBox pic_logo;
+        private PictureBox pic_Show;
+        private PictureBox pic_Hide;
     }
 }

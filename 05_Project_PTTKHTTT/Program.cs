@@ -12,6 +12,7 @@ namespace _05_Project_PTTKHTTT
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Personnel.P_CompanyList());
+
         }
     }
 }
