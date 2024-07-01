@@ -41,11 +41,11 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             }
             return result;
         }
-        public bool AddCompany(DTO_PTTKHTTT.Company newCompany)
+        /*public bool AddCompany(DTO_PTTKHTTT.Company newCompany)
         {
             string query = string.Format("INSERT INTO dbo.DoanhNghiep VALUES ('{0}', N'{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", newCompany.compID, newCompany.compName, newCompany.createdDate, newCompany.expireDate, newCompany.preferential, newCompany.employeeID);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
-        }
+        }*/
     }
 }

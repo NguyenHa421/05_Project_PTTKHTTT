@@ -10,41 +10,36 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
 {
     internal class Company
     {
-        public string expireID { get; set; }
-        public string registerID { get; set; }
         public string compID { get; set; }
         public string compName { get; set; }
-        public DateTime createdDate { get; set; }
-        public DateTime expireDate { get; set; }
-        public string preferential { get; set; }
-        public string employeeID { get; set; }
-        public Company(string expireID, string registerID, string compID, string compName, DateTime createdDate, DateTime expireDate, string preferential, string employeeID)
+        public string tax { get; set; }
+        public string representative { get; set; }
+        public string address {  get; set; }
+        public string email { get; set; }
+        public Company(string compID, string compName, string tax, string representative, string address, string email)
         {
-            this.expireID = expireID;
-            this.registerID = registerID;
             this.compID = compID;
             this.compName = compName;
-            this.createdDate = createdDate;
-            this.expireDate = expireDate;
-            this.preferential = preferential;
-            this.employeeID = employeeID;
-        }
-        public Company(DataRow row)
-        {
-            this.expireID = row["MaDanhSach"].ToString();
-            this.registerID = row["MaDangKy"].ToString();
-            this.compID = row["MaDoanhNghiep"].ToString();
-            this.compName = row["TenDoanhNghiep"].ToString();
-            this.createdDate = (DateTime)row["NgayLap"];
-            this.expireDate = (DateTime)row["NgayHetHan"];
-            this.preferential = row["ThongTinUuDai"].ToString();
-            this.employeeID = row["NhanVienLap"].ToString();
+            this.tax = tax;
+            this.representative = representative;
+            this.address = address;
+            this.email = email;
         }
 
-        public static bool AddCompany(Company newCompany)
+        public Company(DataRow row)
+        {
+            this.compID = row["MaDoanhNghiep"].ToString();
+            this.compName = row["TenDoanhNghiep"].ToString();
+            this.tax = row["MaSoThue"].ToString();
+            this.representative = row["NguoiDaiDien"].ToString();
+            this.address = row["DiaChi"].ToString();
+            this.email = row["Email"].ToString();
+        }
+
+        /*public static bool AddCompany(Company newCompany)
         {
             return CompanyDAO.Instance.AddCompany(newCompany);
-        }
+        }*/
         public static List<Company> GetCompanyList()
         {
             return CompanyDAO.Instance.GetCompanyList();

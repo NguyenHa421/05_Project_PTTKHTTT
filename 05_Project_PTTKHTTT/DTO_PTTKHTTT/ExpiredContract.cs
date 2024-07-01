@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
 {
-    internal class ExpiredContract
+    public class ExpiredContract
     {
         public string expireID { get; set; }
         public string registerID { get; set; }

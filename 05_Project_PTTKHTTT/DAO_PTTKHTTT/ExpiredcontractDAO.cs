@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
 {
-    internal class ExpiredContractDAO
+    public class ExpiredContractDAO
     {
         private static ExpiredContractDAO instance;
         public static ExpiredContractDAO Instance

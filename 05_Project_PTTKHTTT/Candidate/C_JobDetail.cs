@@ -37,7 +37,7 @@ namespace _05_Project_PTTKHTTT.Candidate
 
         private void btn_apply_Click(object sender, EventArgs e)
         {
-            DTO_PTTKHTTT.Application newApply = new DTO_PTTKHTTT.Application("0", curJob.regID, Login.username, tb_jobName.Text);
+            DTO_PTTKHTTT.Application newApply = new DTO_PTTKHTTT.Application("0", curJob.regID, Login.loggedInAcc.Username, tb_jobName.Text);
             try
             {
                 DTO_PTTKHTTT.Application.AddApplication(newApply);

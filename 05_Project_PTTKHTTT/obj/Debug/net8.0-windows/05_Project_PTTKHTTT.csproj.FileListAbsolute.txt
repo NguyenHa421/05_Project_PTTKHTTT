@@ -115,7 +115,6 @@ D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-wi
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.MainBase.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddCompany.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitment.resources
-D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitmentDetail.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitmentJobs.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_Application.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_CompanyList.resources
