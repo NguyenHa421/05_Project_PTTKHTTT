@@ -63,5 +63,10 @@ namespace _05_Project_PTTKHTTT.Personnel
         {
             OpenChildForm(new P_AddRecruitment());
         }
+
+        private void btn_detail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
