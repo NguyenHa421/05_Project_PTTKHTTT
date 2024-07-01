@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             pn_parents = new Panel();
+            tb_vancancyName = new TextBox();
+            lb_vacancyName = new Label();
+            tb_candidateName = new TextBox();
+            lb_candidateName = new Label();
             cbB_compName = new ComboBox();
             btn_update = new Button();
             btn_back = new Button();
@@ -37,10 +41,6 @@
             btn_search = new Button();
             dtGrid_application = new DataGridView();
             lb_compName = new Label();
-            lb_candidateName = new Label();
-            tb_candidateName = new TextBox();
-            tb_vancancyName = new TextBox();
-            lb_vacancyName = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_application).BeginInit();
@@ -65,11 +65,51 @@
             pn_parents.Size = new Size(895, 425);
             pn_parents.TabIndex = 4;
             // 
+            // tb_vancancyName
+            // 
+            tb_vancancyName.Font = new Font("Segoe UI", 10.8F);
+            tb_vancancyName.Location = new Point(600, 47);
+            tb_vancancyName.Name = "tb_vancancyName";
+            tb_vancancyName.Size = new Size(266, 31);
+            tb_vancancyName.TabIndex = 128;
+            tb_vancancyName.TabStop = false;
+            // 
+            // lb_vacancyName
+            // 
+            lb_vacancyName.AutoSize = true;
+            lb_vacancyName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_vacancyName.Location = new Point(509, 50);
+            lb_vacancyName.Name = "lb_vacancyName";
+            lb_vacancyName.Size = new Size(85, 28);
+            lb_vacancyName.TabIndex = 127;
+            lb_vacancyName.Text = "Tên vị trí";
+            // 
+            // tb_candidateName
+            // 
+            tb_candidateName.Font = new Font("Segoe UI", 10.8F);
+            tb_candidateName.Location = new Point(206, 47);
+            tb_candidateName.Name = "tb_candidateName";
+            tb_candidateName.Size = new Size(275, 31);
+            tb_candidateName.TabIndex = 126;
+            tb_candidateName.TabStop = false;
+            // 
+            // lb_candidateName
+            // 
+            lb_candidateName.AutoSize = true;
+            lb_candidateName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_candidateName.Location = new Point(32, 50);
+            lb_candidateName.Name = "lb_candidateName";
+            lb_candidateName.Size = new Size(122, 28);
+            lb_candidateName.TabIndex = 125;
+            lb_candidateName.Text = "Tên ứng viên";
+            // 
             // cbB_compName
             // 
+            cbB_compName.DropDownHeight = 200;
             cbB_compName.DropDownStyle = ComboBoxStyle.DropDownList;
             cbB_compName.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbB_compName.FormattingEnabled = true;
+            cbB_compName.IntegralHeight = false;
             cbB_compName.Location = new Point(206, 90);
             cbB_compName.Name = "cbB_compName";
             cbB_compName.Size = new Size(496, 33);
@@ -164,44 +204,6 @@
             lb_compName.Size = new Size(168, 28);
             lb_compName.TabIndex = 114;
             lb_compName.Text = "Tên doanh nghiệp";
-            // 
-            // lb_candidateName
-            // 
-            lb_candidateName.AutoSize = true;
-            lb_candidateName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_candidateName.Location = new Point(32, 50);
-            lb_candidateName.Name = "lb_candidateName";
-            lb_candidateName.Size = new Size(122, 28);
-            lb_candidateName.TabIndex = 125;
-            lb_candidateName.Text = "Tên ứng viên";
-            // 
-            // tb_candidateName
-            // 
-            tb_candidateName.Font = new Font("Segoe UI", 10.8F);
-            tb_candidateName.Location = new Point(206, 47);
-            tb_candidateName.Name = "tb_candidateName";
-            tb_candidateName.Size = new Size(275, 31);
-            tb_candidateName.TabIndex = 126;
-            tb_candidateName.TabStop = false;
-            // 
-            // tb_vancancyName
-            // 
-            tb_vancancyName.Font = new Font("Segoe UI", 10.8F);
-            tb_vancancyName.Location = new Point(600, 47);
-            tb_vancancyName.Name = "tb_vancancyName";
-            tb_vancancyName.Size = new Size(266, 31);
-            tb_vancancyName.TabIndex = 128;
-            tb_vancancyName.TabStop = false;
-            // 
-            // lb_vacancyName
-            // 
-            lb_vacancyName.AutoSize = true;
-            lb_vacancyName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_vacancyName.Location = new Point(509, 50);
-            lb_vacancyName.Name = "lb_vacancyName";
-            lb_vacancyName.Size = new Size(85, 28);
-            lb_vacancyName.TabIndex = 127;
-            lb_vacancyName.Text = "Tên vị trí";
             // 
             // P_Application
             // 

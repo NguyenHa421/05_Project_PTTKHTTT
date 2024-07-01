@@ -25,12 +25,11 @@ namespace _05_Project_PTTKHTTT.Personnel
         private void LoadComboBox()
         {
             cbB_compName.Items.Add("All");
-            cbB_compName.Items.Add("NGÂN HÀNG TMCP NGOẠI THƯƠNG VIỆT NAM");
-            cbB_compName.Items.Add("tập");
-            //List<CompanyDTO> companies = CompanyDAO.Instance.GetCompanyList();
-            //foreach (CompanyDTO c in list)
-            //  cbB_compName.Items.Add(c.TenDoanhNghiep);
-            //cbB_compName.SelectedIndex = 0;
+
+            List<Company> companies = DTO_PTTKHTTT.Company.GetCompanyList();
+            foreach (Company c in companies)
+                cbB_compName.Items.Add(c.compName);
+            cbB_compName.SelectedIndex = 0;
         }
         private void LoadGrid()
         {
