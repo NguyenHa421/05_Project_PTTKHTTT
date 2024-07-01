@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pn_parents = new Panel();
+            btn_Update = new Button();
             btn_back = new Button();
             lb_Info = new Label();
             ptn_refresh = new PictureBox();
@@ -37,7 +38,6 @@
             dtGrid_companyList = new DataGridView();
             tb_compName = new TextBox();
             lb_name = new Label();
-            btn_Update = new Button();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).BeginInit();
@@ -59,6 +59,23 @@
             pn_parents.Name = "pn_parents";
             pn_parents.Size = new Size(783, 319);
             pn_parents.TabIndex = 0;
+            // 
+            // btn_Update
+            // 
+            btn_Update.BackColor = Color.White;
+            btn_Update.BackgroundImage = Properties.Resources.button_round21;
+            btn_Update.FlatAppearance.BorderSize = 0;
+            btn_Update.FlatStyle = FlatStyle.Flat;
+            btn_Update.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_Update.ForeColor = SystemColors.Window;
+            btn_Update.Location = new Point(439, 282);
+            btn_Update.Margin = new Padding(3, 2, 3, 2);
+            btn_Update.Name = "btn_Update";
+            btn_Update.Size = new Size(80, 28);
+            btn_Update.TabIndex = 122;
+            btn_Update.Text = "Cập nhật";
+            btn_Update.UseVisualStyleBackColor = false;
+            btn_Update.Click += btn_Update_Click;
             // 
             // btn_back
             // 
@@ -164,21 +181,6 @@
             lb_name.Size = new Size(133, 21);
             lb_name.TabIndex = 114;
             lb_name.Text = "Tên doanh nghiệp";
-            // 
-            // btn_Update
-            // 
-            btn_Update.BackColor = Color.White;
-            btn_Update.BackgroundImage = Properties.Resources.button_round21;
-            btn_Update.FlatAppearance.BorderSize = 0;
-            btn_Update.FlatStyle = FlatStyle.Flat;
-            btn_Update.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_Update.ForeColor = SystemColors.Window;
-            btn_Update.Location = new Point(501, 376);
-            btn_Update.Name = "btn_Update";
-            btn_Update.Size = new Size(91, 38);
-            btn_Update.TabIndex = 122;
-            btn_Update.Text = "Cập nhật";
-            btn_Update.UseVisualStyleBackColor = false;
             // 
             // P_CompanyList
             // 
