@@ -37,6 +37,7 @@
             dtGrid_recruitmentList = new DataGridView();
             tb_compName = new TextBox();
             lb_nameComp = new Label();
+            btn_detail = new Button();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_recruitmentList).BeginInit();
@@ -44,6 +45,7 @@
             // 
             // pn_parents
             // 
+            pn_parents.Controls.Add(btn_detail);
             pn_parents.Controls.Add(btn_back);
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Controls.Add(ptn_refresh);
@@ -151,6 +153,21 @@
             lb_nameComp.TabIndex = 114;
             lb_nameComp.Text = "Tên doanh nghiệp";
             // 
+            // btn_detail
+            // 
+            btn_detail.BackColor = Color.White;
+            btn_detail.BackgroundImage = Properties.Resources.button_round21;
+            btn_detail.FlatAppearance.BorderSize = 0;
+            btn_detail.FlatStyle = FlatStyle.Flat;
+            btn_detail.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_detail.ForeColor = SystemColors.Window;
+            btn_detail.Location = new Point(508, 376);
+            btn_detail.Name = "btn_detail";
+            btn_detail.Size = new Size(91, 38);
+            btn_detail.TabIndex = 122;
+            btn_detail.Text = "Chi tiết";
+            btn_detail.UseVisualStyleBackColor = false;
+            // 
             // P_Recruitment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -180,5 +197,6 @@
         private DataGridView dtGrid_recruitmentList;
         private TextBox tb_compName;
         private Label lb_nameComp;
+        private Button btn_detail;
     }
 }
