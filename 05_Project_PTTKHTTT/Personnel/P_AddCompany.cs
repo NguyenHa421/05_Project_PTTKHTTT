@@ -25,7 +25,7 @@ namespace _05_Project_PTTKHTTT.Personnel
             tb_address.Text = address;
             tb_email.Text = email;
         }
-        private void btn_back_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Close();
         }

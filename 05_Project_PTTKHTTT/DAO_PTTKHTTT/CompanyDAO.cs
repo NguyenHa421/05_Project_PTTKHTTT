@@ -19,7 +19,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         private CompanyDAO() { }
         public string GetCurrentCounter()
         {
-            string query = "select MaDoanhNghiep form DoanhNghiep order by MaDoanhNghiep desc";
+            string query = "select MaDoanhNghiep from DoanhNghiep order by MaDoanhNghiep desc";
             object result = DataProvider.Instance.ExecuteScalar(query);
             return result.ToString();
         }
@@ -49,7 +49,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         }
         public bool AddCompany(DTO_PTTKHTTT.Company newCompany)
         {
-            string query = string.Format("insert into dbo.DoanhNghiep values ('{0}', N'{1}', '{2}', N'{3}', N'{4}', N'{5})", newCompany.compID, newCompany.compName, newCompany.tax, newCompany.manager, newCompany.address, newCompany.email);
+            string query = string.Format("insert into dbo.DoanhNghiep values ('{0}', N'{1}', '{2}', N'{3}', N'{4}', N'{5}')", newCompany.compID, newCompany.compName, newCompany.tax, newCompany.manager, newCompany.address, newCompany.email);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
