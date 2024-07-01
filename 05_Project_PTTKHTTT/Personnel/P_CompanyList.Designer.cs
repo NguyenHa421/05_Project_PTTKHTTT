@@ -37,6 +37,7 @@
             dtGrid_companyList = new DataGridView();
             tb_compName = new TextBox();
             lb_name = new Label();
+            btn_Update = new Button();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).BeginInit();
@@ -44,6 +45,7 @@
             // 
             // pn_parents
             // 
+            pn_parents.Controls.Add(btn_Update);
             pn_parents.Controls.Add(btn_back);
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Controls.Add(ptn_refresh);
@@ -163,6 +165,21 @@
             lb_name.TabIndex = 114;
             lb_name.Text = "Tên doanh nghiệp";
             // 
+            // btn_Update
+            // 
+            btn_Update.BackColor = Color.White;
+            btn_Update.BackgroundImage = Properties.Resources.button_round21;
+            btn_Update.FlatAppearance.BorderSize = 0;
+            btn_Update.FlatStyle = FlatStyle.Flat;
+            btn_Update.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_Update.ForeColor = SystemColors.Window;
+            btn_Update.Location = new Point(501, 376);
+            btn_Update.Name = "btn_Update";
+            btn_Update.Size = new Size(91, 38);
+            btn_Update.TabIndex = 122;
+            btn_Update.Text = "Cập nhật";
+            btn_Update.UseVisualStyleBackColor = false;
+            // 
             // P_CompanyList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -193,5 +210,6 @@
         private DataGridView dtGrid_companyList;
         private TextBox tb_compName;
         private Label lb_name;
+        private Button btn_Update;
     }
 }

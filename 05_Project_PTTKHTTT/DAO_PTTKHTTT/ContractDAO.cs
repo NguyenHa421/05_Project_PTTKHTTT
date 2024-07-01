@@ -43,9 +43,16 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         }
         public bool AddContract(DTO_PTTKHTTT.Contract newContract)
         {
-            string query = string.Format("INSERT INTO dbo.DoanhNghiep VALUES ('{0}', '{1}', '{2}', '{3}')", newContract.registerID, newContract.compID, newContract.createdDate, newContract.employeeID);
+            string query = string.Format("INSERT INTO PhieuDangKyQuangCao VALUES ('{0}', '{1}', '{2}', '{3}')", newContract.registerID, newContract.createdDate.ToString("dd/MM/yyyy"), newContract.compID, newContract.employeeID);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
+        public string GetCurrentCounter()
+        {
+            string query = "select MaDangKy from PhieuDangKyQuangCao order by MaDangKy desc";
+            object result = DataProvider.Instance.ExecuteScalar(query);
+            return result.ToString();
+        }
+        
     }
 }

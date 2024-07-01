@@ -30,7 +30,9 @@
         {
             lb_tittle = new Label();
             pn_parents = new Panel();
-            btn_next = new Button();
+            lb_criteria = new Label();
+            tb_criteria = new TextBox();
+            btn_confirm = new Button();
             btn_Back = new Button();
             tb_quantity = new TextBox();
             lb_quantity = new Label();
@@ -39,8 +41,6 @@
             dtGrid_jobList = new DataGridView();
             btn_add = new Button();
             btn_delete = new Button();
-            tb_criteria = new TextBox();
-            lb_criteria = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtGrid_jobList).BeginInit();
             SuspendLayout();
@@ -59,7 +59,7 @@
             // 
             pn_parents.Controls.Add(lb_criteria);
             pn_parents.Controls.Add(tb_criteria);
-            pn_parents.Controls.Add(btn_next);
+            pn_parents.Controls.Add(btn_confirm);
             pn_parents.Controls.Add(btn_Back);
             pn_parents.Controls.Add(tb_quantity);
             pn_parents.Controls.Add(lb_quantity);
@@ -74,20 +74,41 @@
             pn_parents.Size = new Size(895, 425);
             pn_parents.TabIndex = 315;
             // 
-            // btn_next
+            // lb_criteria
             // 
-            btn_next.BackColor = Color.White;
-            btn_next.BackgroundImage = Properties.Resources.button_round22;
-            btn_next.FlatAppearance.BorderSize = 0;
-            btn_next.FlatStyle = FlatStyle.Flat;
-            btn_next.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_next.ForeColor = SystemColors.Window;
-            btn_next.Location = new Point(562, 376);
-            btn_next.Name = "btn_next";
-            btn_next.Size = new Size(91, 37);
-            btn_next.TabIndex = 338;
-            btn_next.Text = "Tiếp";
-            btn_next.UseVisualStyleBackColor = false;
+            lb_criteria.AutoSize = true;
+            lb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_criteria.Location = new Point(19, 288);
+            lb_criteria.Name = "lb_criteria";
+            lb_criteria.Size = new Size(78, 28);
+            lb_criteria.TabIndex = 340;
+            lb_criteria.Text = "Tiêu chí";
+            // 
+            // tb_criteria
+            // 
+            tb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_criteria.Location = new Point(120, 288);
+            tb_criteria.Multiline = true;
+            tb_criteria.Name = "tb_criteria";
+            tb_criteria.Size = new Size(745, 82);
+            tb_criteria.TabIndex = 339;
+            tb_criteria.TabStop = false;
+            // 
+            // btn_confirm
+            // 
+            btn_confirm.BackColor = Color.White;
+            btn_confirm.BackgroundImage = Properties.Resources.button_round22;
+            btn_confirm.FlatAppearance.BorderSize = 0;
+            btn_confirm.FlatStyle = FlatStyle.Flat;
+            btn_confirm.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_confirm.ForeColor = SystemColors.Window;
+            btn_confirm.Location = new Point(562, 376);
+            btn_confirm.Name = "btn_confirm";
+            btn_confirm.Size = new Size(91, 37);
+            btn_confirm.TabIndex = 338;
+            btn_confirm.Text = "Đăng ký";
+            btn_confirm.UseVisualStyleBackColor = false;
+            btn_confirm.Click += btn_confirm_Click;
             // 
             // btn_Back
             // 
@@ -103,6 +124,7 @@
             btn_Back.TabIndex = 337;
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // tb_quantity
             // 
@@ -151,6 +173,7 @@
             dtGrid_jobList.RowHeadersWidth = 51;
             dtGrid_jobList.Size = new Size(836, 194);
             dtGrid_jobList.TabIndex = 329;
+            dtGrid_jobList.CellContentClick += dtGrid_jobList_CellContentClick;
             // 
             // btn_add
             // 
@@ -166,6 +189,7 @@
             btn_add.TabIndex = 317;
             btn_add.Text = "Thêm";
             btn_add.UseVisualStyleBackColor = false;
+            btn_add.Click += btn_add_Click;
             // 
             // btn_delete
             // 
@@ -181,26 +205,7 @@
             btn_delete.TabIndex = 316;
             btn_delete.Text = "Xoá";
             btn_delete.UseVisualStyleBackColor = false;
-            // 
-            // tb_criteria
-            // 
-            tb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_criteria.Location = new Point(120, 288);
-            tb_criteria.Multiline = true;
-            tb_criteria.Name = "tb_criteria";
-            tb_criteria.Size = new Size(745, 82);
-            tb_criteria.TabIndex = 339;
-            tb_criteria.TabStop = false;
-            // 
-            // lb_criteria
-            // 
-            lb_criteria.AutoSize = true;
-            lb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_criteria.Location = new Point(19, 288);
-            lb_criteria.Name = "lb_criteria";
-            lb_criteria.Size = new Size(78, 28);
-            lb_criteria.TabIndex = 340;
-            lb_criteria.Text = "Tiêu chí";
+            btn_delete.Click += btn_delete_Click;
             // 
             // P_AddRecruitmentJobs
             // 
@@ -231,7 +236,7 @@
         private Label lb_vacancy;
         private Button btn_delete;
         private Button btn_add;
-        private Button btn_next;
+        private Button btn_confirm;
         private Button btn_Back;
         private TextBox tb_criteria;
         private Label lb_criteria;

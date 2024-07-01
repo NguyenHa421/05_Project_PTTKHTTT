@@ -39,5 +39,25 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return ContractDAO.Instance.SearchContract(compName);
         }
+        public static bool AddContract(DTO_PTTKHTTT.Contract newContract)
+        {
+            newContract.employeeID = Login.loggedInAcc.Username;
+            return ContractDAO.Instance.AddContract(newContract);
+        }
+        public static string CreateNewID(string curCounter)
+        {
+            string counter = curCounter.Substring(3);
+            int newCounter = int.Parse(counter) + 1;
+            string result = "PDK";
+            if (newCounter < 100)
+            {
+                result += "0";
+                if (newCounter < 10)
+                    result += "0";
+            }
+            result += newCounter.ToString();
+            return result;
+        }
+        
     }
 }

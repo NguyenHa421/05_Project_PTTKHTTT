@@ -58,6 +58,7 @@ D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8
 D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.MainBase.resources
 D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddCompany.resources
 D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitment.resources
+D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitmentDetail.resources
 D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_Application.resources
 D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_CompanyList.resources
 D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_ExpiredContract.resources
@@ -135,7 +136,6 @@ D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-wi
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\05_Project_PTTKHTTT.pdb
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\05_Project_PTTKHTTT.genruntimeconfig.cache
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\ref\05_Project_PTTKHTTT.dll
-D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_AddRecruitmentJobs.resources
-D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_RecruitmentDetail.resources
-D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateRecruitment.resources
-D:\HK2_2023_2024\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateRecruitmentContent.resources
+D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_RecruitmentDetail.resources
+D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateRecruitment.resources
+D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateRecruitmentContent.resources

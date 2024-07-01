@@ -15,6 +15,7 @@ namespace _05_Project_PTTKHTTT.Personnel
     {
         List<Contract> contracts;
         BindingSource contractBinding = new BindingSource();
+        int clickedRow = -1;
         public P_Recruitment()
         {
             InitializeComponent();
@@ -62,6 +63,18 @@ namespace _05_Project_PTTKHTTT.Personnel
         private void btn_add_Click(object sender, EventArgs e)
         {
             OpenChildForm(new P_AddRecruitment());
+        }
+
+        private void dtGrid_recruitmentList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            clickedRow = e.RowIndex;
+        }
+        private void btn_detail_Click(object sender, EventArgs e)
+        {
+            if (clickedRow >= 0)
+            {
+                OpenChildForm(new P_RecruitmentDetail(contracts[clickedRow]));
+            }
         }
     }
 }
