@@ -74,6 +74,7 @@ namespace _05_Project_PTTKHTTT.Personnel
                     listDelete += "('" + expiredContracts[clickedRow].expireID + "','" + expiredContracts[clickedRow].registerID + "')";
                     expiredContracts = ExpiredContract.SearchExpiredContract(tb_compName.Text, listDelete);
                     expiredContractList.DataSource = expiredContracts;
+                    clickedRow = -1;
                     Success success = new Success();
                     success.ShowDialog();
                 }
