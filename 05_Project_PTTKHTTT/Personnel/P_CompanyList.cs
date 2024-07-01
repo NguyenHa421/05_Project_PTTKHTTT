@@ -58,14 +58,24 @@ namespace _05_Project_PTTKHTTT.Personnel
         {
             dtGrid_companyList.DataSource = companyList;
             companies = DTO_PTTKHTTT.Company.SearchCompany(tb_compName.Text);
-        }
-        private void dtGrid_companyList_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            clickedRow = e.RowIndex;
+            companyList.DataSource = companies;
         }
         private void btn_add_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Personnel.P_AddCompany());
+            OpenChildForm(new Personnel.P_AddCompany("", "", "", "", ""));
+        }
+
+        private void dtGrid_companyList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            clickedRow = e.RowIndex;
+        }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+            if (clickedRow >= 0)
+            {
+                OpenChildForm(new Personnel.P_UpdateCompany(companies[clickedRow].compID, companies[clickedRow].compName, companies[clickedRow].tax, companies[clickedRow].manager, companies[clickedRow].address, companies[clickedRow].email));
+            }
         }
     }
 }

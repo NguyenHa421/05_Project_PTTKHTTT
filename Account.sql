@@ -59,5 +59,10 @@ begin
 	from inserted;
 end
 
---insert into dbo.ThanhVien(HoTen,NamSinh,SoDienThoai,DiaChi,Email) values (N'Trần Minh Thư', 1998, '0987783196', N'Xã Mai Lâm, Huyện Đông Anh, Hà Nội', 'anhthutran@gmail.com') --select * from ThanhVien --select * from Accounts --delete from ThanhVien where MaThanhVien = 'TV031' --delete from Accounts where Username = 'TV031' 
+--insert into dbo.ThanhVien(HoTen,NamSinh,SoDienThoai,DiaChi,Email) values (N'Trần Minh Thư', 1998, '0987783196', N'Xã Mai Lâm, Huyện Đông Anh, Hà Nội', 'anhthutran@gmail.com')
+--select * from ThanhVien
+--select * from Accounts
+--delete from ThanhVien where MaThanhVien = 'TV031'
+--delete from Accounts where Username = 'TV031'
+
 
