@@ -17,6 +17,12 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             private set { CompanyDAO.instance = value; }
         }
         private CompanyDAO() { }
+        public string GetCurrentCounter()
+        {
+            string query = "select MaDoanhNghiep form DoanhNghiep order by MaDoanhNghiep desc";
+            object result = DataProvider.Instance.ExecuteScalar(query);
+            return result.ToString();
+        }
         public List<DTO_PTTKHTTT.Company> GetCompanyList()
         {
             List<DTO_PTTKHTTT.Company> list = new List<DTO_PTTKHTTT.Company>();
@@ -41,11 +47,17 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             }
             return result;
         }
-        /*public bool AddCompany(DTO_PTTKHTTT.Company newCompany)
+        public bool AddCompany(DTO_PTTKHTTT.Company newCompany)
         {
-            string query = string.Format("INSERT INTO dbo.DoanhNghiep VALUES ('{0}', N'{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", newCompany.compID, newCompany.compName, newCompany.createdDate, newCompany.expireDate, newCompany.preferential, newCompany.employeeID);
+            string query = string.Format("insert into dbo.DoanhNghiep values ('{0}', N'{1}', '{2}', N'{3}', N'{4}', N'{5})", newCompany.compID, newCompany.compName, newCompany.tax, newCompany.manager, newCompany.address, newCompany.email);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
-        }*/
+        }
+        public bool UpdateCompany(string ID, string newName, string newTax, string newManager, string newAddress, string newEmail)
+        {
+            string query = string.Format("update dbo.DoanhNghiep set TenDoanhNghiep = N'{0}', MaSoThue = '{1}', NguoiDaiDien = N'{2}', DiaChi = N'{3}', Email = N'{4}' where MaDoanhNghiep = '{5}'", newName, newTax, newManager, newAddress, newEmail, ID);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
     }
 }

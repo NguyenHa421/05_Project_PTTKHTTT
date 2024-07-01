@@ -49,7 +49,7 @@ namespace _05_Project_PTTKHTTT.Personnel
                 {
                     try
                     {
-                        DTO_PTTKHTTT.Application.UpdateStatte(cbB_state.Text, tb_idCV.Text);
+                        DTO_PTTKHTTT.Application.UpdateState(cbB_state.Text, tb_idCV.Text);
                     }
                     catch(Exception ex)
                     {

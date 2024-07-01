@@ -53,7 +53,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return ApplicationDAO.Instance.CandidateSearchApplicationn(ID, searchKey, vacancy);
         }
-        public static bool UpdateStatte(string newState, string idCV)
+        public static bool UpdateState(string newState, string idCV)
         {
             return ApplicationDAO.Instance.UpdateState(newState, idCV);
         }
