@@ -31,10 +31,9 @@
             pn_parents = new Panel();
             tb_unit = new TextBox();
             cbB_compName = new ComboBox();
-            tb_criteria = new TextBox();
+            tb_content = new TextBox();
             lb_content = new Label();
-            tb_number = new TextBox();
-            lb_number = new Label();
+            lb_unit = new Label();
             cbB_compID = new ComboBox();
             cbB_formpost = new ComboBox();
             dt_date = new DateTimePicker();
@@ -52,10 +51,9 @@
             // 
             pn_parents.Controls.Add(tb_unit);
             pn_parents.Controls.Add(cbB_compName);
-            pn_parents.Controls.Add(tb_criteria);
+            pn_parents.Controls.Add(tb_content);
             pn_parents.Controls.Add(lb_content);
-            pn_parents.Controls.Add(tb_number);
-            pn_parents.Controls.Add(lb_number);
+            pn_parents.Controls.Add(lb_unit);
             pn_parents.Controls.Add(cbB_compID);
             pn_parents.Controls.Add(cbB_formpost);
             pn_parents.Controls.Add(dt_date);
@@ -74,10 +72,10 @@
             // tb_unit
             // 
             tb_unit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_unit.Location = new Point(741, 196);
+            tb_unit.Location = new Point(661, 196);
             tb_unit.Name = "tb_unit";
             tb_unit.ReadOnly = true;
-            tb_unit.Size = new Size(124, 34);
+            tb_unit.Size = new Size(204, 34);
             tb_unit.TabIndex = 333;
             tb_unit.TabStop = false;
             // 
@@ -90,16 +88,17 @@
             cbB_compName.Name = "cbB_compName";
             cbB_compName.Size = new Size(668, 36);
             cbB_compName.TabIndex = 328;
+            cbB_compName.SelectedIndexChanged += cbB_compName_SelectedIndexChanged;
             // 
-            // tb_criteria
+            // tb_content
             // 
-            tb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_criteria.Location = new Point(197, 255);
-            tb_criteria.Multiline = true;
-            tb_criteria.Name = "tb_criteria";
-            tb_criteria.Size = new Size(668, 100);
-            tb_criteria.TabIndex = 327;
-            tb_criteria.TabStop = false;
+            tb_content.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_content.Location = new Point(197, 255);
+            tb_content.Multiline = true;
+            tb_content.Name = "tb_content";
+            tb_content.Size = new Size(668, 100);
+            tb_content.TabIndex = 327;
+            tb_content.TabStop = false;
             // 
             // lb_content
             // 
@@ -111,24 +110,15 @@
             lb_content.TabIndex = 326;
             lb_content.Text = "Nội dung";
             // 
-            // tb_number
+            // lb_unit
             // 
-            tb_number.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_number.Location = new Point(684, 196);
-            tb_number.Name = "tb_number";
-            tb_number.Size = new Size(51, 34);
-            tb_number.TabIndex = 325;
-            tb_number.TabStop = false;
-            // 
-            // lb_number
-            // 
-            lb_number.AutoSize = true;
-            lb_number.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_number.Location = new Point(586, 199);
-            lb_number.Name = "lb_number";
-            lb_number.Size = new Size(92, 28);
-            lb_number.TabIndex = 324;
-            lb_number.Text = "Số lượng";
+            lb_unit.AutoSize = true;
+            lb_unit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_unit.Location = new Point(586, 199);
+            lb_unit.Name = "lb_unit";
+            lb_unit.Size = new Size(69, 28);
+            lb_unit.TabIndex = 324;
+            lb_unit.Text = "Đơn vị";
             // 
             // cbB_compID
             // 
@@ -139,6 +129,7 @@
             cbB_compID.Name = "cbB_compID";
             cbB_compID.Size = new Size(297, 36);
             cbB_compID.TabIndex = 323;
+            cbB_compID.SelectedIndexChanged += cbB_compID_SelectedIndexChanged;
             // 
             // cbB_formpost
             // 
@@ -149,6 +140,7 @@
             cbB_formpost.Name = "cbB_formpost";
             cbB_formpost.Size = new Size(361, 36);
             cbB_formpost.TabIndex = 323;
+            cbB_formpost.SelectedIndexChanged += cbB_formpost_SelectedIndexChanged;
             // 
             // dt_date
             // 
@@ -215,6 +207,7 @@
             btn_next.TabIndex = 317;
             btn_next.Text = "Tiếp";
             btn_next.UseVisualStyleBackColor = false;
+            btn_next.Click += btn_next_Click;
             // 
             // btn_Back
             // 
@@ -230,6 +223,7 @@
             btn_Back.TabIndex = 316;
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // lb_Info
             // 
@@ -263,8 +257,7 @@
         private TextBox tb_unit;
         private ComboBox cbB_compName;
         private Label lb_content;
-        private TextBox tb_number;
-        private Label lb_number;
+        private Label lb_unit;
         private ComboBox cbB_formpost;
         private DateTimePicker dt_date;
         private Label lb_date;
@@ -273,7 +266,7 @@
         private Button btn_next;
         private Button btn_Back;
         private Label lb_Info;
-        private TextBox tb_criteria;
+        private TextBox tb_content;
         private ComboBox cbB_compID;
         private Label label1;
     }

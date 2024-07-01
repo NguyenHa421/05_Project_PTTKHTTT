@@ -39,5 +39,29 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return ContractDAO.Instance.SearchContract(compName);
         }
+        public static bool AddContract(DTO_PTTKHTTT.Contract newContract)
+        {
+            newContract.employeeID = "NV002";// Login.loggedInAcc.Username;
+            return ContractDAO.Instance.AddContract(newContract);
+        }
+        public static string CreateNewID(string curCounter)
+        {
+            string counter = curCounter.Substring(3);
+            int newCounter = int.Parse(counter) + 1;
+            string result = "PDK";
+            if (newCounter < 100)
+            {
+                result += "0";
+                if (newCounter < 10)
+                    result += "0";
+            }
+            result += newCounter.ToString();
+            return result;
+        }
+        public static bool AddRecruitmentPost(string regID, string formID, string content, DateTime postDate)
+        {
+            string staffId = "NV002";// Login.loggedInAcc.Username;
+            return ContractDAO.Instance.AddRecruitmentPost(regID, formID, content, postDate, staffId);
+        }
     }
 }
