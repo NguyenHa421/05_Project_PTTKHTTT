@@ -10,7 +10,7 @@ namespace _05_Project_PTTKHTTT
     {
 
         public static Account loggedInAcc = new Account();
-
+        public static string username;
         public Login()
         {
             InitializeComponent();
