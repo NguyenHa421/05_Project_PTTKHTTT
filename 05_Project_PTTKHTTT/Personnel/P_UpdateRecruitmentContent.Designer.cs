@@ -69,6 +69,7 @@
             btn_confirm.TabIndex = 303;
             btn_confirm.Text = "Cập nhật";
             btn_confirm.UseVisualStyleBackColor = false;
+            btn_confirm.Click += btn_confirm_Click;
             // 
             // btn_Back
             // 
@@ -84,6 +85,7 @@
             btn_Back.TabIndex = 302;
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // lb_Info
             // 

@@ -15,6 +15,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public string compName { get; set; }
         public DateTime createdDate { get; set; }
         public string employeeID { get; set; }
+        public string state { get; set; }
         public Contract(string registerID, string compID, string compName, DateTime createdDate, string employeeID)
         {
             this.registerID = registerID;
@@ -30,6 +31,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.compName = row["TenDoanhNghiep"].ToString();
             this.createdDate = (DateTime)row["ThoiGianDangKy"];
             this.employeeID = row["NhanVienTiepNhan"].ToString();
+            this.state = row["TrangThai"].ToString();
         }
         public static List<DTO_PTTKHTTT.Contract> GetContractList()
         {

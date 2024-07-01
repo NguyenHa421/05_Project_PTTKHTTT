@@ -80,6 +80,7 @@
             dtGrid_vacancyList.RowHeadersWidth = 51;
             dtGrid_vacancyList.Size = new Size(286, 173);
             dtGrid_vacancyList.TabIndex = 124;
+            dtGrid_vacancyList.CellContentClick += dtGrid_vacancyList_CellContentClick;
             // 
             // lb_criteria
             // 

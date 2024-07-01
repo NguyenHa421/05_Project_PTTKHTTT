@@ -59,5 +59,17 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             }
             return result;
         }
+        public bool UpdatePostedJob(PostedJob updatedJob)
+        {
+            string query = string.Format("update ThongTinDangTuyen set SoLuong = {0}, TieuChi = N'{1}' where MaDangKy = '{2}' and TenViTri = N'{3}'", updatedJob.quantity, updatedJob.criteria, updatedJob.regID, updatedJob.jobName);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool DeletePostedJob(string regID,  string jobName)
+        {
+            string query = string.Format("delete from ThongTinDangTuyen where MaDangKy = '{0}' and TenViTri = N'{1}'",regID, jobName);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         public List<DTO_PTTKHTTT.Contract> GetContractList()
         {
             List<DTO_PTTKHTTT.Contract> list = new List<DTO_PTTKHTTT.Contract>();
-            string query = "select * from DoanhNghiep d, PhieuDangKyQuangCao p where d.MaDoanhNghiep = p.MaDoanhNghiep";
+            string query = "select * from DoanhNghiep d, PhieuDangKyQuangCao p, BaiDang b where d.MaDoanhNghiep = p.MaDoanhNghiep and p.MaDangKy = b.MaDangKy";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow row in data.Rows)
             {
@@ -32,7 +32,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         public List<DTO_PTTKHTTT.Contract> SearchContract(string compName)
         {
             List<DTO_PTTKHTTT.Contract> result = new List<DTO_PTTKHTTT.Contract>();
-            string query = string.Format("select * from DoanhNghiep d, PhieuDangKyQuangCao p where d.MaDoanhNghiep = p.MaDoanhNghiep and d.TenDoanhNghiep like N'%{0}%' ", compName);
+            string query = string.Format("select * from DoanhNghiep d, PhieuDangKyQuangCao p, BaiDang b where d.MaDoanhNghiep = p.MaDoanhNghiep and b.MaDangKy = p.MaDangKy and d.TenDoanhNghiep like N'%{0}%' ", compName);
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow row in data.Rows)
             {

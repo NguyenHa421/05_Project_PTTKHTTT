@@ -139,3 +139,4 @@ D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-wi
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_RecruitmentDetail.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateRecruitment.resources
 D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateRecruitmentContent.resources
+D:\Projects\PTTKHTTT\05_Project_PTTKHTTT\05_Project_PTTKHTTT\obj\Debug\net8.0-windows\_05_Project_PTTKHTTT.Personnel.P_UpdateCompany.resources

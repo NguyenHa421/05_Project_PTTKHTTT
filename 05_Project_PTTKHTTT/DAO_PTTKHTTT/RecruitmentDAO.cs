@@ -29,5 +29,11 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             Recruitment result = new Recruitment(data.Rows[0]);
             return result;
         }
+        public bool UpdateRecruitment(PostedJob newRec, string newForm)
+        {
+            string query = string.Format("update BaiDang set MaHinhThuc = '{0}', NoiDung = N'{1}', NgayDang = '{2}', TrangThai = '{3}' where MaDangKy = '{4}'", newForm, newRec.content, newRec.postdate.ToString(), newRec.state, newRec.regID);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
     }
 }

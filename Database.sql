@@ -69,7 +69,7 @@ create table BaiDang
 	NgayDang date not null,
 	TrangThai nvarchar(50) not null,
 	NhanVienThucHien char(10) not null,
-	primary key(MaDangKy, MaHinhThuc)
+	primary key(MaDangKy)
 )
 create table DanhSachGiaHan
 (

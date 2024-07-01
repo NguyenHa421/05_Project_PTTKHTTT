@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             pn_parents = new Panel();
+            tb_quantity = new TextBox();
+            lb_quantity = new Label();
+            tb_vacancy = new TextBox();
+            lb_vacancy = new Label();
+            dtGrid_jobList = new DataGridView();
+            tb_regID = new TextBox();
+            lb_regID = new Label();
             tb_compName = new TextBox();
             tb_criteria = new TextBox();
             lb_criteria = new Label();
@@ -42,13 +49,6 @@
             btn_Back = new Button();
             lb_state = new Label();
             lb_Info = new Label();
-            tb_regID = new TextBox();
-            lb_regID = new Label();
-            dtGrid_jobList = new DataGridView();
-            tb_quantity = new TextBox();
-            lb_quantity = new Label();
-            tb_vacancy = new TextBox();
-            lb_vacancy = new Label();
             pn_parents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtGrid_jobList).BeginInit();
             SuspendLayout();
@@ -79,6 +79,75 @@
             pn_parents.Name = "pn_parents";
             pn_parents.Size = new Size(895, 425);
             pn_parents.TabIndex = 315;
+            // 
+            // tb_quantity
+            // 
+            tb_quantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_quantity.Location = new Point(400, 340);
+            tb_quantity.Name = "tb_quantity";
+            tb_quantity.Size = new Size(158, 34);
+            tb_quantity.TabIndex = 340;
+            tb_quantity.TabStop = false;
+            // 
+            // lb_quantity
+            // 
+            lb_quantity.AutoSize = true;
+            lb_quantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_quantity.Location = new Point(197, 343);
+            lb_quantity.Name = "lb_quantity";
+            lb_quantity.Size = new Size(197, 28);
+            lb_quantity.TabIndex = 339;
+            lb_quantity.Text = "Số lượng tuyển dụng";
+            // 
+            // tb_vacancy
+            // 
+            tb_vacancy.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_vacancy.Location = new Point(197, 299);
+            tb_vacancy.Name = "tb_vacancy";
+            tb_vacancy.Size = new Size(361, 34);
+            tb_vacancy.TabIndex = 338;
+            tb_vacancy.TabStop = false;
+            // 
+            // lb_vacancy
+            // 
+            lb_vacancy.AutoSize = true;
+            lb_vacancy.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_vacancy.Location = new Point(29, 302);
+            lb_vacancy.Name = "lb_vacancy";
+            lb_vacancy.Size = new Size(85, 28);
+            lb_vacancy.TabIndex = 337;
+            lb_vacancy.Text = "Tên vị trí";
+            // 
+            // dtGrid_jobList
+            // 
+            dtGrid_jobList.BackgroundColor = SystemColors.Control;
+            dtGrid_jobList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtGrid_jobList.Location = new Point(577, 171);
+            dtGrid_jobList.Name = "dtGrid_jobList";
+            dtGrid_jobList.RowHeadersWidth = 51;
+            dtGrid_jobList.Size = new Size(288, 194);
+            dtGrid_jobList.TabIndex = 336;
+            dtGrid_jobList.CellContentClick += dtGrid_jobList_CellContentClick;
+            // 
+            // tb_regID
+            // 
+            tb_regID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_regID.Location = new Point(197, 44);
+            tb_regID.Name = "tb_regID";
+            tb_regID.ReadOnly = true;
+            tb_regID.Size = new Size(279, 34);
+            tb_regID.TabIndex = 335;
+            tb_regID.TabStop = false;
+            // 
+            // lb_regID
+            // 
+            lb_regID.AutoSize = true;
+            lb_regID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_regID.Location = new Point(29, 47);
+            lb_regID.Name = "lb_regID";
+            lb_regID.Size = new Size(169, 28);
+            lb_regID.TabIndex = 334;
+            lb_regID.Text = "Mã phiếu đăng ký";
             // 
             // tb_compName
             // 
@@ -127,7 +196,6 @@
             cbB_state.Name = "cbB_state";
             cbB_state.Size = new Size(250, 36);
             cbB_state.TabIndex = 322;
-            cbB_state.SelectedIndexChanged += cbB_state_SelectedIndexChanged;
             // 
             // dt_date
             // 
@@ -184,6 +252,7 @@
             btn_next.TabIndex = 317;
             btn_next.Text = "Tiếp";
             btn_next.UseVisualStyleBackColor = false;
+            btn_next.Click += btn_next_Click;
             // 
             // btn_Back
             // 
@@ -199,6 +268,7 @@
             btn_Back.TabIndex = 316;
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // lb_state
             // 
@@ -219,74 +289,6 @@
             lb_Info.Size = new Size(374, 31);
             lb_Info.TabIndex = 314;
             lb_Info.Text = "Cập nhật phiếu đăng ký quảng cáo";
-            // 
-            // tb_regID
-            // 
-            tb_regID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_regID.Location = new Point(197, 44);
-            tb_regID.Name = "tb_regID";
-            tb_regID.ReadOnly = true;
-            tb_regID.Size = new Size(279, 34);
-            tb_regID.TabIndex = 335;
-            tb_regID.TabStop = false;
-            // 
-            // lb_regID
-            // 
-            lb_regID.AutoSize = true;
-            lb_regID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_regID.Location = new Point(29, 47);
-            lb_regID.Name = "lb_regID";
-            lb_regID.Size = new Size(169, 28);
-            lb_regID.TabIndex = 334;
-            lb_regID.Text = "Mã phiếu đăng ký";
-            // 
-            // dtGrid_jobList
-            // 
-            dtGrid_jobList.BackgroundColor = SystemColors.Control;
-            dtGrid_jobList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGrid_jobList.Location = new Point(577, 171);
-            dtGrid_jobList.Name = "dtGrid_jobList";
-            dtGrid_jobList.RowHeadersWidth = 51;
-            dtGrid_jobList.Size = new Size(288, 194);
-            dtGrid_jobList.TabIndex = 336;
-            // 
-            // tb_quantity
-            // 
-            tb_quantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_quantity.Location = new Point(400, 340);
-            tb_quantity.Name = "tb_quantity";
-            tb_quantity.Size = new Size(158, 34);
-            tb_quantity.TabIndex = 340;
-            tb_quantity.TabStop = false;
-            // 
-            // lb_quantity
-            // 
-            lb_quantity.AutoSize = true;
-            lb_quantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_quantity.Location = new Point(197, 343);
-            lb_quantity.Name = "lb_quantity";
-            lb_quantity.Size = new Size(197, 28);
-            lb_quantity.TabIndex = 339;
-            lb_quantity.Text = "Số lượng tuyển dụng";
-            // 
-            // tb_vacancy
-            // 
-            tb_vacancy.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_vacancy.Location = new Point(197, 299);
-            tb_vacancy.Name = "tb_vacancy";
-            tb_vacancy.Size = new Size(361, 34);
-            tb_vacancy.TabIndex = 338;
-            tb_vacancy.TabStop = false;
-            // 
-            // lb_vacancy
-            // 
-            lb_vacancy.AutoSize = true;
-            lb_vacancy.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_vacancy.Location = new Point(29, 302);
-            lb_vacancy.Name = "lb_vacancy";
-            lb_vacancy.Size = new Size(85, 28);
-            lb_vacancy.TabIndex = 337;
-            lb_vacancy.Text = "Tên vị trí";
             // 
             // P_UpdateRecruitment
             // 

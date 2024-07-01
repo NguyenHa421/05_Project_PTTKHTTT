@@ -76,5 +76,18 @@ namespace _05_Project_PTTKHTTT.Personnel
                 OpenChildForm(new P_RecruitmentDetail(contracts[clickedRow]));
             }
         }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+            if (clickedRow >= 0)
+            {
+                if (contracts[clickedRow].state == "Đã đăng")
+                {
+                    MessageBox.Show("Không thể chỉnh sửa bài đăng đã đăng!", "Lỗi");
+                    return;
+                }
+                OpenChildForm(new P_UpdateRecruitment(contracts[clickedRow]));
+            }
+        }
     }
 }

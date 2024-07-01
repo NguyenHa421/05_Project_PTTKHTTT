@@ -43,5 +43,18 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return RecruitmentDAO.Instance.GetRecruitmentByID(regID);
         }
+        public static void UpdateRecruitment(PostedJob newJob, string oldJobName, string newForm)
+        {
+            RecruitmentDAO.Instance.UpdateRecruitment(newJob, newForm);
+            if (newJob.jobName == oldJobName)
+            {
+                PostedJobDAO.Instance.UpdatePostedJob(newJob);
+            }
+            else
+            {
+                PostedJobDAO.Instance.DeletePostedJob(newJob.regID, oldJobName);
+                PostedJobDAO.Instance.PostJob(newJob);
+            }
+        }
     }
 }
