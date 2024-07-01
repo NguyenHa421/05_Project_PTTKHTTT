@@ -53,11 +53,6 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             object result = DataProvider.Instance.ExecuteScalar(query);
             return result.ToString();
         }
-        public bool AddRecruitmentPost(string regId, string formId, string content, DateTime postDate, string staffId)
-        {
-            string query = string.Format("insert into BaiDang values ('{0}', '{1}', N'{2}', '{3}', N'Chưa đăng', '{4}')", regId, formId, content, postDate.ToString(), staffId);
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-            return result > 0;
-        }
+        
     }
 }

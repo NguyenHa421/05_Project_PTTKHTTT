@@ -52,5 +52,9 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return PostedJobDAO.Instance.PostJob(newJob);
         }
+        public static List<PostedJob> GetPostedJobsByRegID(string id)
+        {
+            return PostedJobDAO.Instance.GetPostedJobsByRegID(id);
+        }
     }
 }

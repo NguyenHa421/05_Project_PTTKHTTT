@@ -82,12 +82,25 @@ namespace _05_Project_PTTKHTTT.Personnel
             string curCounter = ContractDAO.Instance.GetCurrentCounter();
             string newCounter = Contract.CreateNewID(curCounter);
             newContract.registerID = newCounter;
-            Contract.AddContract(newContract);
-            Contract.AddRecruitmentPost(newContract.registerID, form, content, postDate);
+            if (!Contract.AddContract(newContract))
+            {
+                MessageBox.Show("Tạo phiếu đăng ký thất bại!", "Lỗi");
+                return;
+            }
+            Recruitment newRec = new Recruitment(newContract.registerID, form, content, postDate);
+            if (!Recruitment.AddRecruitmentPost(newRec))
+            {
+                MessageBox.Show("Tạo bài đăng thất bại!", "Lỗi");
+                return;
+            }
             foreach (DataRow row in jobList.Rows)
             {
                 PostedJob newJob = new PostedJob(newContract.registerID, row["jobName"].ToString(), (int)row["amount"], row["criteria"].ToString());
-                PostedJob.PostJob(newJob);
+                if (!PostedJob.PostJob(newJob))
+                {
+                    MessageBox.Show("Thêm việc làm thất bại!", "Lỗi");
+                    return;
+                }
             }
             Success success = new Success();
             success.ShowDialog();

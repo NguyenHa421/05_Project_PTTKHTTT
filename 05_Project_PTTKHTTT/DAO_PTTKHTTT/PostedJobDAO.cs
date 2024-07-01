@@ -47,5 +47,17 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
+        public List<PostedJob> GetPostedJobsByRegID(string id)
+        {
+            List<PostedJob> result = new List<PostedJob>();
+            string query = string.Format("select * from dbo.DoanhNghiep d, dbo.PhieuDangKyQuangCao p, dbo.BaiDang b, dbo.ThongTinDangTuyen t where d. MaDoanhNghiep = p.MaDoanhNghiep and p.MaDangKy = b.MaDangKy and p.MaDangKy = t.MaDangKy and p.MaDangKy = '{0}'", id);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow row in data.Rows)
+            {
+                PostedJob pj = new PostedJob(row);
+                result.Add(pj);
+            }
+            return result;
+        }
     }
 }

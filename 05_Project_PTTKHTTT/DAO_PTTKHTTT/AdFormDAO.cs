@@ -28,5 +28,11 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             }
             return result;
         }
+        public string GetAdFormNameByID(string id)
+        {
+            string query = string.Format("select TenHinhThuc from HinhThucDangTuyen where MaHinhThuc = '{0}'", id);
+            object result = DataProvider.Instance.ExecuteScalar(query);
+            return result.ToString();
+        }
     }
 }

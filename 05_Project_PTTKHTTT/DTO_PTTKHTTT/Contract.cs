@@ -41,7 +41,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         }
         public static bool AddContract(DTO_PTTKHTTT.Contract newContract)
         {
-            newContract.employeeID = "NV002";// Login.loggedInAcc.Username;
+            newContract.employeeID = Login.loggedInAcc.Username;
             return ContractDAO.Instance.AddContract(newContract);
         }
         public static string CreateNewID(string curCounter)
@@ -58,10 +58,6 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             result += newCounter.ToString();
             return result;
         }
-        public static bool AddRecruitmentPost(string regID, string formID, string content, DateTime postDate)
-        {
-            string staffId = "NV002";// Login.loggedInAcc.Username;
-            return ContractDAO.Instance.AddRecruitmentPost(regID, formID, content, postDate, staffId);
-        }
+        
     }
 }
