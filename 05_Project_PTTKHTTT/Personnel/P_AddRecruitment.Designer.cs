@@ -30,24 +30,20 @@
         {
             pn_parents = new Panel();
             tb_unit = new TextBox();
-            tb_quantity = new TextBox();
-            lb_quantity = new Label();
-            tb_vacancy = new TextBox();
-            lb_vacancy = new Label();
-            cbB_nameComp = new ComboBox();
+            cbB_compName = new ComboBox();
             tb_criteria = new TextBox();
-            lb_criteria = new Label();
+            lb_content = new Label();
             tb_number = new TextBox();
             lb_number = new Label();
+            cbB_compID = new ComboBox();
             cbB_formpost = new ComboBox();
-            cbB_state = new ComboBox();
             dt_date = new DateTimePicker();
             lb_date = new Label();
             lb_formpost = new Label();
+            label1 = new Label();
             lb_name = new Label();
             btn_next = new Button();
             btn_Back = new Button();
-            lb_state = new Label();
             lb_Info = new Label();
             pn_parents.SuspendLayout();
             SuspendLayout();
@@ -55,24 +51,20 @@
             // pn_parents
             // 
             pn_parents.Controls.Add(tb_unit);
-            pn_parents.Controls.Add(tb_quantity);
-            pn_parents.Controls.Add(lb_quantity);
-            pn_parents.Controls.Add(tb_vacancy);
-            pn_parents.Controls.Add(lb_vacancy);
-            pn_parents.Controls.Add(cbB_nameComp);
+            pn_parents.Controls.Add(cbB_compName);
             pn_parents.Controls.Add(tb_criteria);
-            pn_parents.Controls.Add(lb_criteria);
+            pn_parents.Controls.Add(lb_content);
             pn_parents.Controls.Add(tb_number);
             pn_parents.Controls.Add(lb_number);
+            pn_parents.Controls.Add(cbB_compID);
             pn_parents.Controls.Add(cbB_formpost);
-            pn_parents.Controls.Add(cbB_state);
             pn_parents.Controls.Add(dt_date);
             pn_parents.Controls.Add(lb_date);
             pn_parents.Controls.Add(lb_formpost);
+            pn_parents.Controls.Add(label1);
             pn_parents.Controls.Add(lb_name);
             pn_parents.Controls.Add(btn_next);
             pn_parents.Controls.Add(btn_Back);
-            pn_parents.Controls.Add(lb_state);
             pn_parents.Controls.Add(lb_Info);
             pn_parents.Location = new Point(0, 0);
             pn_parents.Name = "pn_parents";
@@ -82,84 +74,47 @@
             // tb_unit
             // 
             tb_unit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_unit.Location = new Point(741, 220);
+            tb_unit.Location = new Point(741, 196);
             tb_unit.Name = "tb_unit";
             tb_unit.ReadOnly = true;
             tb_unit.Size = new Size(124, 34);
             tb_unit.TabIndex = 333;
             tb_unit.TabStop = false;
             // 
-            // tb_quantity
+            // cbB_compName
             // 
-            tb_quantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_quantity.Location = new Point(684, 113);
-            tb_quantity.Name = "tb_quantity";
-            tb_quantity.Size = new Size(181, 34);
-            tb_quantity.TabIndex = 332;
-            tb_quantity.TabStop = false;
-            // 
-            // lb_quantity
-            // 
-            lb_quantity.AutoSize = true;
-            lb_quantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_quantity.Location = new Point(488, 116);
-            lb_quantity.Name = "lb_quantity";
-            lb_quantity.Size = new Size(197, 28);
-            lb_quantity.TabIndex = 331;
-            lb_quantity.Text = "Số lượng tuyển dụng";
-            // 
-            // tb_vacancy
-            // 
-            tb_vacancy.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_vacancy.Location = new Point(197, 113);
-            tb_vacancy.Name = "tb_vacancy";
-            tb_vacancy.Size = new Size(250, 34);
-            tb_vacancy.TabIndex = 330;
-            tb_vacancy.TabStop = false;
-            // 
-            // lb_vacancy
-            // 
-            lb_vacancy.AutoSize = true;
-            lb_vacancy.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_vacancy.Location = new Point(29, 116);
-            lb_vacancy.Name = "lb_vacancy";
-            lb_vacancy.Size = new Size(85, 28);
-            lb_vacancy.TabIndex = 329;
-            lb_vacancy.Text = "Tên vị trí";
-            // 
-            // cbB_nameComp
-            // 
-            cbB_nameComp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbB_nameComp.FormattingEnabled = true;
-            cbB_nameComp.Location = new Point(197, 59);
-            cbB_nameComp.Name = "cbB_nameComp";
-            cbB_nameComp.Size = new Size(668, 36);
-            cbB_nameComp.TabIndex = 328;
+            cbB_compName.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbB_compName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbB_compName.FormattingEnabled = true;
+            cbB_compName.Location = new Point(197, 146);
+            cbB_compName.Name = "cbB_compName";
+            cbB_compName.Size = new Size(668, 36);
+            cbB_compName.TabIndex = 328;
             // 
             // tb_criteria
             // 
             tb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_criteria.Location = new Point(197, 280);
+            tb_criteria.Location = new Point(197, 255);
             tb_criteria.Multiline = true;
             tb_criteria.Name = "tb_criteria";
-            tb_criteria.Size = new Size(668, 75);
+            tb_criteria.Size = new Size(668, 100);
             tb_criteria.TabIndex = 327;
             tb_criteria.TabStop = false;
             // 
-            // lb_criteria
+            // lb_content
             // 
-            lb_criteria.AutoSize = true;
-            lb_criteria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_criteria.Location = new Point(29, 283);
-            lb_criteria.Name = "lb_criteria";
-            lb_criteria.Size = new Size(78, 28);
-            lb_criteria.TabIndex = 326;
-            lb_criteria.Text = "Tiêu chí";
+            lb_content.AutoSize = true;
+            lb_content.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb_content.Location = new Point(29, 255);
+            lb_content.Name = "lb_content";
+            lb_content.Size = new Size(95, 28);
+            lb_content.TabIndex = 326;
+            lb_content.Text = "Nội dung";
             // 
             // tb_number
             // 
             tb_number.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_number.Location = new Point(684, 220);
+            tb_number.Location = new Point(684, 196);
             tb_number.Name = "tb_number";
             tb_number.Size = new Size(51, 34);
             tb_number.TabIndex = 325;
@@ -169,36 +124,38 @@
             // 
             lb_number.AutoSize = true;
             lb_number.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_number.Location = new Point(586, 223);
+            lb_number.Location = new Point(586, 199);
             lb_number.Name = "lb_number";
             lb_number.Size = new Size(92, 28);
             lb_number.TabIndex = 324;
             lb_number.Text = "Số lượng";
             // 
+            // cbB_compID
+            // 
+            cbB_compID.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbB_compID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbB_compID.FormattingEnabled = true;
+            cbB_compID.Location = new Point(197, 94);
+            cbB_compID.Name = "cbB_compID";
+            cbB_compID.Size = new Size(297, 36);
+            cbB_compID.TabIndex = 323;
+            // 
             // cbB_formpost
             // 
+            cbB_formpost.DropDownStyle = ComboBoxStyle.DropDownList;
             cbB_formpost.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbB_formpost.FormattingEnabled = true;
-            cbB_formpost.Location = new Point(197, 220);
+            cbB_formpost.Location = new Point(197, 196);
             cbB_formpost.Name = "cbB_formpost";
             cbB_formpost.Size = new Size(361, 36);
             cbB_formpost.TabIndex = 323;
-            // 
-            // cbB_state
-            // 
-            cbB_state.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbB_state.FormattingEnabled = true;
-            cbB_state.Location = new Point(600, 167);
-            cbB_state.Name = "cbB_state";
-            cbB_state.Size = new Size(265, 36);
-            cbB_state.TabIndex = 322;
             // 
             // dt_date
             // 
             dt_date.CustomFormat = "dd/MM/yyyy";
             dt_date.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dt_date.Format = DateTimePickerFormat.Custom;
-            dt_date.Location = new Point(197, 165);
+            dt_date.Location = new Point(615, 96);
             dt_date.MinDate = new DateTime(2024, 6, 26, 0, 0, 0, 0);
             dt_date.Name = "dt_date";
             dt_date.Size = new Size(250, 34);
@@ -208,7 +165,7 @@
             // 
             lb_date.AutoSize = true;
             lb_date.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_date.Location = new Point(29, 170);
+            lb_date.Location = new Point(500, 101);
             lb_date.Name = "lb_date";
             lb_date.Size = new Size(109, 28);
             lb_date.TabIndex = 320;
@@ -218,17 +175,27 @@
             // 
             lb_formpost.AutoSize = true;
             lb_formpost.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_formpost.Location = new Point(29, 223);
+            lb_formpost.Location = new Point(29, 199);
             lb_formpost.Name = "lb_formpost";
             lb_formpost.Size = new Size(147, 28);
             lb_formpost.TabIndex = 319;
             lb_formpost.Text = "Hình thức đăng";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(29, 101);
+            label1.Name = "label1";
+            label1.Size = new Size(169, 28);
+            label1.TabIndex = 318;
+            label1.Text = "Mã Doanh nghiệp";
+            // 
             // lb_name
             // 
             lb_name.AutoSize = true;
             lb_name.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_name.Location = new Point(29, 62);
+            lb_name.Location = new Point(29, 149);
             lb_name.Name = "lb_name";
             lb_name.Size = new Size(136, 28);
             lb_name.TabIndex = 318;
@@ -264,21 +231,11 @@
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
             // 
-            // lb_state
-            // 
-            lb_state.AutoSize = true;
-            lb_state.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb_state.Location = new Point(488, 170);
-            lb_state.Name = "lb_state";
-            lb_state.Size = new Size(98, 28);
-            lb_state.TabIndex = 315;
-            lb_state.Text = "Trạng thái";
-            // 
             // lb_Info
             // 
             lb_Info.AutoSize = true;
             lb_Info.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_Info.Location = new Point(276, 13);
+            lb_Info.Location = new Point(279, 25);
             lb_Info.Name = "lb_Info";
             lb_Info.Size = new Size(321, 31);
             lb_Info.TabIndex = 314;
@@ -304,24 +261,20 @@
 
         private Panel pn_parents;
         private TextBox tb_unit;
-        private TextBox tb_quantity;
-        private Label lb_quantity;
-        private TextBox tb_vacancy;
-        private Label lb_vacancy;
-        private ComboBox cbB_nameComp;
-        private TextBox tb_criteria;
-        private Label lb_criteria;
+        private ComboBox cbB_compName;
+        private Label lb_content;
         private TextBox tb_number;
         private Label lb_number;
         private ComboBox cbB_formpost;
-        private ComboBox cbB_state;
         private DateTimePicker dt_date;
         private Label lb_date;
         private Label lb_formpost;
         private Label lb_name;
         private Button btn_next;
         private Button btn_Back;
-        private Label lb_state;
         private Label lb_Info;
+        private TextBox tb_criteria;
+        private ComboBox cbB_compID;
+        private Label label1;
     }
 }

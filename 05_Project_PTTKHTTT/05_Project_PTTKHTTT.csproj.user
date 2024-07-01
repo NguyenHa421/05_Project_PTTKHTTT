@@ -40,9 +40,6 @@
     <Compile Update="Personnel\P_AddRecruitment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Personnel\P_AddRecruitmentDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Personnel\P_AddRecruitmentJobs.cs">
       <SubType>Form</SubType>
     </Compile>

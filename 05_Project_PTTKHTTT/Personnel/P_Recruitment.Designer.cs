@@ -71,6 +71,7 @@
             btn_back.TabIndex = 121;
             btn_back.Text = "Quay lại";
             btn_back.UseVisualStyleBackColor = false;
+            btn_back.Click += btn_back_Click;
             // 
             // lb_Info
             // 
@@ -91,6 +92,7 @@
             ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
             ptn_refresh.TabIndex = 119;
             ptn_refresh.TabStop = false;
+            ptn_refresh.Click += ptn_refresh_Click;
             // 
             // btn_search
             // 
@@ -106,6 +108,7 @@
             btn_search.TabIndex = 118;
             btn_search.Text = "Tìm kiếm";
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // btn_add
             // 
@@ -121,6 +124,7 @@
             btn_add.TabIndex = 117;
             btn_add.Text = "Tạo mới";
             btn_add.UseVisualStyleBackColor = false;
+            btn_add.Click += btn_add_Click;
             // 
             // dtGrid_recruitmentList
             // 
