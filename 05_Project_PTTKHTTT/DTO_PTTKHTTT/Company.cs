@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
 {
-    internal class CompanyDTO
+    internal class Company
     {
         public string expireID { get; set; }
         public string registerID { get; set; }
@@ -18,7 +18,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public DateTime expireDate { get; set; }
         public string preferential { get; set; }
         public string employeeID { get; set; }
-        public CompanyDTO(string expireID, string registerID, string compID, string compName, DateTime createdDate, DateTime expireDate, string preferential, string employeeID)
+        public Company(string expireID, string registerID, string compID, string compName, DateTime createdDate, DateTime expireDate, string preferential, string employeeID)
         {
             this.expireID = expireID;
             this.registerID = registerID;
@@ -29,7 +29,7 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.preferential = preferential;
             this.employeeID = employeeID;
         }
-        public CompanyDTO(DataRow row)
+        public Company(DataRow row)
         {
             this.expireID = row["MaDanhSach"].ToString();
             this.registerID = row["MaDangKy"].ToString();
@@ -40,9 +40,18 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
             this.preferential = row["ThongTinUuDai"].ToString();
             this.employeeID = row["NhanVienLap"].ToString();
         }
-        public static List<CompanyDTO> SearchCompany(string compName, string listDelete)
+
+        public static bool AddCompany(Company newCompany)
         {
-            return CompanyDAO.Instance.SearchExpiredCompany(compName, listDelete);
+            return CompanyDAO.Instance.AddCompany(newCompany);
+        }
+        public static List<Company> GetCompanyList()
+        {
+            return CompanyDAO.Instance.GetCompanyList();
+        }
+        public static List<Company> SearchCompany(string compName)
+        {
+            return CompanyDAO.Instance.SearchCompany(compName);
         }
     }
 }

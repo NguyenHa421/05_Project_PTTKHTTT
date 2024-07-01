@@ -8,7 +8,9 @@ namespace _05_Project_PTTKHTTT
 {
     public partial class Login : Form
     {
+
         public static Account loggedInAcc = new Account();
+
         public Login()
         {
             InitializeComponent();

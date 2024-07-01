@@ -160,6 +160,7 @@
             btn_apply.TabIndex = 271;
             btn_apply.Text = "Ứng tuyển";
             btn_apply.UseVisualStyleBackColor = false;
+            btn_apply.Click += btn_apply_Click;
             // 
             // btn_Back
             // 
@@ -175,6 +176,7 @@
             btn_Back.TabIndex = 270;
             btn_Back.Text = "Quay lại";
             btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // lb_amount
             // 
@@ -206,7 +208,7 @@
             lb_Info.TabIndex = 266;
             lb_Info.Text = "Thông tin chi tiết việc làm";
             // 
-            // C_JobContent
+            // C_JobDetail
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -228,7 +230,7 @@
             Controls.Add(lb_state);
             Controls.Add(lb_Info);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "C_JobContent";
+            Name = "C_JobDetail";
             StartPosition = FormStartPosition.CenterParent;
             Text = "C_JobContent";
             ResumeLayout(false);

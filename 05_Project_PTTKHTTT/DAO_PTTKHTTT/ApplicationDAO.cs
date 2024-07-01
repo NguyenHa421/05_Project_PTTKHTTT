@@ -17,6 +17,12 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             private set { ApplicationDAO.instance = value; }
         }
         private ApplicationDAO() { }
+        public string GetCurrentCounter()
+        {
+            string query = "select MaHoSo from HoSo order by MaHoSo desc";
+            object result = DataProvider.Instance.ExecuteScalar(query);
+            return result.ToString();
+        }
         public List<DTO_PTTKHTTT.Application> GetApplicationList()
         {
             List<DTO_PTTKHTTT.Application> list = new List<DTO_PTTKHTTT.Application>();

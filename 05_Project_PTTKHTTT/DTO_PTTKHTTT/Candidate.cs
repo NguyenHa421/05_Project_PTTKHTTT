@@ -21,5 +21,9 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return CandidateDAO.Instance.AddCandidate(new_cdd);
         }
+        public static string GetNameByID(string id)
+        {
+            return CandidateDAO.Instance.GetNameByID(id);
+        }
     }
 }
