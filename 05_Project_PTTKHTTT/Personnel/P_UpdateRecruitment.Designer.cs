@@ -209,7 +209,6 @@
             lb_state.Size = new Size(98, 28);
             lb_state.TabIndex = 315;
             lb_state.Text = "Trạng thái";
-            lb_state.Click += this.lb_state_Click;
             // 
             // lb_Info
             // 
