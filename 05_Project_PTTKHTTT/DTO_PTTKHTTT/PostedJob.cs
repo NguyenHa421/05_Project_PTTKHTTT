@@ -15,10 +15,10 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public int quantity { get; set; }
         public string criteria { get; set; }
         public string content { get; set; }
-        public DateTime postdate { get; set; }
+        public DateTime? postdate { get; set; }
         public string state { get; set; }
         public string regID { get; set; }
-        public PostedJob(string compName, string jobName, int quantity, string criteria, string content, DateTime postdate, string state, string regID)
+        public PostedJob(string regID, string jobName, int quantity, string criteria, string content = null, DateTime? postdate = null, string state = null,  string compName = null)
         {
             this.compName = compName;
             this.jobName = jobName;
@@ -47,6 +47,10 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         public static List<PostedJob> SearchPostedJob(string compName, string jobName)
         {
             return PostedJobDAO.Instance.SearchPostedJob(compName, jobName);
+        }
+        public static bool PostJob(PostedJob newJob)
+        {
+            return PostedJobDAO.Instance.PostJob(newJob);
         }
     }
 }
