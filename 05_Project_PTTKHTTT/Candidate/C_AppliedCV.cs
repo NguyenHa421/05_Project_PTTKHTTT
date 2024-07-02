@@ -22,7 +22,7 @@ namespace _05_Project_PTTKHTTT.Candidate
         private void LoadGrid()
         {
             dtGrid_jobList.DataSource = applicationList;
-            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateGetApplicationList("TV018");
+            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateGetApplicationList(Login.loggedInAcc.Username);
             
         }
         private void btn_back_Click(object sender, EventArgs e)
@@ -35,14 +35,14 @@ namespace _05_Project_PTTKHTTT.Candidate
             tb_compName.Clear();
             tb_job.Clear();
             dtGrid_jobList.DataSource = applicationList;
-            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateGetApplicationList("TV018");
+            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateGetApplicationList(Login.loggedInAcc.Username);
             
         }
 
         private void btn_search_Click(object sender, EventArgs e)
         {
             dtGrid_jobList.DataSource = applicationList;
-            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateSearchApplicationn("TV018", tb_compName.Text, tb_job.Text);
+            applicationList.DataSource = DTO_PTTKHTTT.Application.CandidateSearchApplicationn(Login.loggedInAcc.Username, tb_compName.Text, tb_job.Text);
             
         }
     }
