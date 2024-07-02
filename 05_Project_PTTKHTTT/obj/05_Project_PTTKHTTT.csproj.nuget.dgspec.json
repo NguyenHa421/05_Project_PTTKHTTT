@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj": {}
+    "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj": {}
   },
   "projects": {
-    "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj": {
+    "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
+        "projectUniqueName": "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
         "projectName": "05_Project_PTTKHTTT",
-        "projectPath": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
-        "packagesPath": "C:\\Users\\thien\\.nuget\\packages\\",
-        "outputPath": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\obj\\",
+        "projectPath": "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj",
+        "packagesPath": "C:\\Users\\MSI USER\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\MSI USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

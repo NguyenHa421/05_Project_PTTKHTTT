@@ -39,7 +39,13 @@ namespace _05_Project_PTTKHTTT.Personnel
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                if (ex.ToString().Contains("FK_HS_TTDT"))
+                {
+                    MessageBox.Show("Vị trí này đã có hồ sơ nộp, không thể chỉnh sửa!", "Lỗi");
+                    return;
+                }
+                else
+                    MessageBox.Show(ex.ToString());
             }
         }
     }

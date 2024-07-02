@@ -199,7 +199,7 @@
             // 
             // dt_date
             // 
-            dt_date.CustomFormat = "dd/MM/yyyy";
+            dt_date.CustomFormat = "MM/dd/yyyy";
             dt_date.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dt_date.Format = DateTimePickerFormat.Custom;
             dt_date.Location = new Point(615, 42);

@@ -36,5 +36,9 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return AdFormDAO.Instance.GetAdFormNameByID(id);
         }
+        public static string GetAdFormIDByName(string name)
+        {
+            return AdFormDAO.Instance.GetAdFormIDByName(name);
+        }
     }
 }

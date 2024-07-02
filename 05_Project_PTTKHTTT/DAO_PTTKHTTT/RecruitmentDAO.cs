@@ -31,7 +31,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         }
         public bool UpdateRecruitment(PostedJob newRec, string newForm)
         {
-            string query = string.Format("update BaiDang set MaHinhThuc = '{0}', NoiDung = N'{1}', NgayDang = '{2}', TrangThai = '{3}' where MaDangKy = '{4}'", newForm, newRec.content, newRec.postdate.ToString(), newRec.state, newRec.regID);
+            string query = string.Format("update BaiDang set MaHinhThuc = '{0}', NoiDung = N'{1}', NgayDang = '{2}', TrangThai = N'{3}' where MaDangKy = '{4}'", newForm, newRec.content, newRec.postdate.ToString().Substring(0, 10), newRec.state, newRec.regID);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

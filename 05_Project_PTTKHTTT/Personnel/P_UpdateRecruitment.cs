@@ -40,7 +40,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         {
             tb_regID.Text = contract.registerID;
             tb_compName.Text = contract.compName;
-            dt_date.Text = curRec.postdate.ToString();
+            dt_date.Value = curRec.postdate;
         }
         void LoadComboBox(Contract contract)
         {
@@ -110,7 +110,8 @@ namespace _05_Project_PTTKHTTT.Personnel
                 return;
             }
             PostedJob updatedJob = new PostedJob(tb_regID.Text, tb_vacancy.Text, quantity, tb_criteria.Text, "", dt_date.Value, cbB_state.Text);
-            OpenChildForm(new P_UpdateRecruitmentContent(updatedJob, curRec.content, jobList[clickedRow].jobName, cbB_formpost.Text));
+            string formID = AdForm.GetAdFormIDByName(cbB_formpost.Text);
+            OpenChildForm(new P_UpdateRecruitmentContent(updatedJob, curRec.content, jobList[clickedRow].jobName, formID));
         }
     }
 }
