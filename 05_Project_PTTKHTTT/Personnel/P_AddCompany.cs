@@ -31,11 +31,38 @@ namespace _05_Project_PTTKHTTT.Personnel
         }
         private void btn_confirm_Click(object sender, EventArgs e)
         {
+            if (tb_name.Text == "" || tb_tax.Text == "" || tb_manager.Text == "" || tb_address.Text == "" || tb_email.Text == "")
+            {
+                MessageBox.Show("Không được bỏ trống thông tin!", "Lỗi");
+                return;
+            }
+            try
+            {
+                int.Parse(tb_tax.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Mã số thuế không hợp lệ!", "Lỗi");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(tb_email.Text) || !tb_email.Text.Contains("@") || !tb_email.Text.Contains("."))
+            {
+                MessageBox.Show("Email không hợp lệ!", "Lỗi");
+                return;
+            }
+
             DTO_PTTKHTTT.Company newComp = new DTO_PTTKHTTT.Company("", tb_name.Text, tb_tax.Text, tb_manager.Text, tb_address.Text, tb_email.Text);
-            DTO_PTTKHTTT.Company.AddCompany(newComp);
+            try
+            {
+                DTO_PTTKHTTT.Company.AddCompany(newComp);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm không thành công!", "Lỗi");
+                return;
+            }
             Success success = new Success();
             success.ShowDialog();
-            this.Close();
         }
     }
 }
