@@ -46,6 +46,10 @@
             tb_confirm = new TextBox();
             btn_confirm = new Button();
             btn_back = new Button();
+            pic_hide = new PictureBox();
+            pic_show = new PictureBox();
+            pic_hide2 = new PictureBox();
+            pic_show2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pic_logo).BeginInit();
             pn_name.SuspendLayout();
             pn_phone.SuspendLayout();
@@ -54,6 +58,10 @@
             pn_address.SuspendLayout();
             pn_password.SuspendLayout();
             pn_confirm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_hide).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_show).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_hide2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_show2).BeginInit();
             SuspendLayout();
             // 
             // pic_logo
@@ -192,6 +200,8 @@
             // 
             pn_password.BackgroundImage = Properties.Resources.Line1;
             pn_password.BackgroundImageLayout = ImageLayout.Zoom;
+            pn_password.Controls.Add(pic_hide);
+            pn_password.Controls.Add(pic_show);
             pn_password.Controls.Add(tb_password);
             pn_password.Location = new Point(59, 385);
             pn_password.Name = "pn_password";
@@ -203,7 +213,7 @@
             tb_password.BackColor = Color.White;
             tb_password.BorderStyle = BorderStyle.None;
             tb_password.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_password.Location = new Point(13, 9);
+            tb_password.Location = new Point(14, 9);
             tb_password.Name = "tb_password";
             tb_password.PlaceholderText = "Nhập mật khẩu mới";
             tb_password.Size = new Size(376, 31);
@@ -214,6 +224,8 @@
             // 
             pn_confirm.BackgroundImage = Properties.Resources.Line1;
             pn_confirm.BackgroundImageLayout = ImageLayout.Zoom;
+            pn_confirm.Controls.Add(pic_hide2);
+            pn_confirm.Controls.Add(pic_show2);
             pn_confirm.Controls.Add(tb_confirm);
             pn_confirm.Location = new Point(495, 385);
             pn_confirm.Name = "pn_confirm";
@@ -264,6 +276,50 @@
             btn_back.UseVisualStyleBackColor = true;
             btn_back.Click += btn_back_Click;
             // 
+            // pic_hide
+            // 
+            pic_hide.Image = Properties.Resources.eye1;
+            pic_hide.Location = new Point(349, 5);
+            pic_hide.Name = "pic_hide";
+            pic_hide.Size = new Size(41, 38);
+            pic_hide.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_hide.TabIndex = 246;
+            pic_hide.TabStop = false;
+            pic_hide.Click += pic_hide_Click;
+            // 
+            // pic_show
+            // 
+            pic_show.Image = Properties.Resources.visual1;
+            pic_show.Location = new Point(349, 5);
+            pic_show.Name = "pic_show";
+            pic_show.Size = new Size(41, 38);
+            pic_show.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_show.TabIndex = 245;
+            pic_show.TabStop = false;
+            pic_show.Click += pic_show_Click;
+            // 
+            // pic_hide2
+            // 
+            pic_hide2.Image = Properties.Resources.eye1;
+            pic_hide2.Location = new Point(349, 5);
+            pic_hide2.Name = "pic_hide2";
+            pic_hide2.Size = new Size(41, 38);
+            pic_hide2.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_hide2.TabIndex = 248;
+            pic_hide2.TabStop = false;
+            pic_hide2.Click += pic_hide2_Click;
+            // 
+            // pic_show2
+            // 
+            pic_show2.Image = Properties.Resources.visual1;
+            pic_show2.Location = new Point(349, 5);
+            pic_show2.Name = "pic_show2";
+            pic_show2.Size = new Size(41, 38);
+            pic_show2.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_show2.TabIndex = 247;
+            pic_show2.TabStop = false;
+            pic_show2.Click += pic_show2_Click;
+            // 
             // C_RegisterAccount
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -301,6 +357,10 @@
             pn_password.PerformLayout();
             pn_confirm.ResumeLayout(false);
             pn_confirm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_hide).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_show).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_hide2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_show2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -325,5 +385,9 @@
         private TextBox tb_confirm;
         private Button btn_confirm;
         private Button btn_back;
+        private PictureBox pic_hide;
+        private PictureBox pic_show;
+        private PictureBox pic_hide2;
+        private PictureBox pic_show2;
     }
 }
