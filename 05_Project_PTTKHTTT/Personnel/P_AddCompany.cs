@@ -36,15 +36,6 @@ namespace _05_Project_PTTKHTTT.Personnel
                 MessageBox.Show("Không được bỏ trống thông tin!", "Lỗi");
                 return;
             }
-            try
-            {
-                int.Parse(tb_tax.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Mã số thuế không hợp lệ!", "Lỗi");
-                return;
-            }
             if (string.IsNullOrWhiteSpace(tb_email.Text) || !tb_email.Text.Contains("@") || !tb_email.Text.Contains("."))
             {
                 MessageBox.Show("Email không hợp lệ!", "Lỗi");
@@ -58,7 +49,8 @@ namespace _05_Project_PTTKHTTT.Personnel
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Thêm không thành công!", "Lỗi");
+                if (ex.ToString().Contains("UNIQUE"))
+                    MessageBox.Show("Mã số thuế trùng lắp!", "Lỗi");
                 return;
             }
             Success success = new Success();
