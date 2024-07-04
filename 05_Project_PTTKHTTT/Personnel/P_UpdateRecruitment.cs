@@ -109,6 +109,11 @@ namespace _05_Project_PTTKHTTT.Personnel
                 MessageBox.Show("Số lượng tuyển dụng không hợp lệ!", "Lỗi");
                 return;
             }
+            if (dt_date.Value <= DateTime.Today)
+            {
+                MessageBox.Show("Ngày đăng phải là một ngày trong tương lai!", "Lỗi");
+                return;
+            }
             PostedJob updatedJob = new PostedJob(tb_regID.Text, tb_vacancy.Text, quantity, tb_criteria.Text, "", dt_date.Value, cbB_state.Text);
             string formID = AdForm.GetAdFormIDByName(cbB_formpost.Text);
             OpenChildForm(new P_UpdateRecruitmentContent(updatedJob, curRec.content, jobList[clickedRow].jobName, formID));

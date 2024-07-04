@@ -42,11 +42,14 @@ namespace _05_Project_PTTKHTTT.Personnel
                 if (ex.ToString().Contains("FK_HS_TTDT"))
                 {
                     MessageBox.Show("Vị trí này đã có hồ sơ nộp, không thể chỉnh sửa!", "Lỗi");
-                    return;
                 }
                 else
                     MessageBox.Show(ex.ToString());
+                return;
             }
+            Success success = new Success();
+            success.ShowDialog();
+            this.Close();
         }
     }
 }
