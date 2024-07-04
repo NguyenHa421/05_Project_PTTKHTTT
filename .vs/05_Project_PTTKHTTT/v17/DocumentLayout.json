@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_addcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_addcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -35,25 +31,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "P_AddCompany.cs",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAIwDkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T09:03:24.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Program.cs",
               "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Program.cs",
               "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Program.cs",
               "RelativeToolTip": "05_Project_PTTKHTTT\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T07:08:26.282Z",
               "EditorCaption": ""
