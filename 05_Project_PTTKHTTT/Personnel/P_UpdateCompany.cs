@@ -33,6 +33,16 @@ namespace _05_Project_PTTKHTTT.Personnel
         }
         private void btn_confirm_Click(object sender, EventArgs e)
         {
+            if (tb_manager.Text == "" || tb_address.Text == "" || tb_email.Text == "")
+            {
+                MessageBox.Show("Không được bỏ trống thông tin!", "Lỗi");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(tb_email.Text) || !tb_email.Text.Contains("@") || !tb_email.Text.Contains("."))
+            {
+                MessageBox.Show("Email không hợp lệ!", "Lỗi");
+                return;
+            }
             using (Confirm_Update confirm = new Confirm_Update())
             {
                 if (confirm.ShowDialog() == DialogResult.OK)
