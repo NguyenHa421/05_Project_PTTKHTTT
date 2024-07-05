@@ -54,7 +54,7 @@ namespace _05_Project_PTTKHTTT.Personnel
             contractBinding.DataSource = contracts;
         }
 
-        private void ptn_refresh_Click(object sender, EventArgs e)
+        private void btn_refresh_Click(object sender, EventArgs e)
         {
             contracts = Contract.GetContractList();
             contractBinding.DataSource = contracts;
