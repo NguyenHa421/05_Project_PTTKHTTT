@@ -43,7 +43,7 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
         }
         public bool PostJob(PostedJob newJob)
         {
-            string query = string.Format("insert into ThongTinDangTuyen values ('{0}', N'{1}', {2}, '{3}')", newJob.regID, newJob.jobName, newJob.quantity, newJob.criteria);
+            string query = string.Format("insert into ThongTinDangTuyen values ('{0}', N'{1}', {2}, N'{3}')", newJob.regID, newJob.jobName, newJob.quantity, newJob.criteria);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
