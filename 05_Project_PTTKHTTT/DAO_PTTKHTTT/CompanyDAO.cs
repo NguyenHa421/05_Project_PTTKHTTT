@@ -53,9 +53,9 @@ namespace _05_Project_PTTKHTTT.DAO_PTTKHTTT
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdateCompany(string ID, string newName, string newTax, string newManager, string newAddress, string newEmail)
+        public bool UpdateCompany(string ID, string newName, string newManager, string newAddress, string newEmail)
         {
-            string query = string.Format("update dbo.DoanhNghiep set TenDoanhNghiep = N'{0}', MaSoThue = '{1}', NguoiDaiDien = N'{2}', DiaChi = N'{3}', Email = N'{4}' where MaDoanhNghiep = '{5}'", newName, newTax, newManager, newAddress, newEmail, ID);
+            string query = string.Format("update dbo.DoanhNghiep set TenDoanhNghiep = N'{0}', NguoiDaiDien = N'{1}', DiaChi = N'{2}', Email = N'{3}' where MaDoanhNghiep = '{4}'", newName, newManager, newAddress, newEmail, ID);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

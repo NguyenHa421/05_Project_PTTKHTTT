@@ -64,9 +64,9 @@ namespace _05_Project_PTTKHTTT.DTO_PTTKHTTT
         {
             return CompanyDAO.Instance.SearchCompany(compName);
         }
-        public static bool UpdateCompany(string ID, string newName, string newTax, string newManager, string newAddress, string newEmail)
+        public static bool UpdateCompany(string ID, string newName, string newManager, string newAddress, string newEmail)
         {
-            return CompanyDAO.Instance.UpdateCompany(ID, newName, newTax, newManager, newAddress, newEmail);
+            return CompanyDAO.Instance.UpdateCompany(ID, newName, newManager, newAddress, newEmail);
         }
     }
 }
