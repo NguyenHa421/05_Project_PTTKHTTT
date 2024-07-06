@@ -49,7 +49,7 @@ namespace _05_Project_PTTKHTTT.Personnel
                 {
                     try
                     {
-                        DTO_PTTKHTTT.Company.UpdateCompany(tb_compID.Text, tb_name.Text, tb_tax.Text, tb_manager.Text, tb_address.Text, tb_email.Text);
+                        DTO_PTTKHTTT.Company.UpdateCompany(tb_compID.Text, tb_name.Text, tb_manager.Text, tb_address.Text, tb_email.Text);
                     }
                     catch (Exception ex)
                     {
