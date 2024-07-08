@@ -32,14 +32,14 @@
             btn_Update = new Button();
             btn_back = new Button();
             lb_Info = new Label();
-            ptn_refresh = new PictureBox();
+            btn_refresh = new PictureBox();
             btn_search = new Button();
             btn_add = new Button();
             dtGrid_companyList = new DataGridView();
             tb_compName = new TextBox();
             lb_name = new Label();
             pn_parents.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ptn_refresh).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btn_refresh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).BeginInit();
             SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             pn_parents.Controls.Add(btn_Update);
             pn_parents.Controls.Add(btn_back);
             pn_parents.Controls.Add(lb_Info);
-            pn_parents.Controls.Add(ptn_refresh);
+            pn_parents.Controls.Add(btn_refresh);
             pn_parents.Controls.Add(btn_search);
             pn_parents.Controls.Add(btn_add);
             pn_parents.Controls.Add(dtGrid_companyList);
@@ -104,17 +104,17 @@
             lb_Info.TabIndex = 120;
             lb_Info.Text = "Thông tin doanh nghiệp";
             // 
-            // ptn_refresh
+            // btn_refresh
             // 
-            ptn_refresh.Image = Properties.Resources.refresh_buttons;
-            ptn_refresh.Location = new Point(616, 41);
-            ptn_refresh.Margin = new Padding(3, 2, 3, 2);
-            ptn_refresh.Name = "ptn_refresh";
-            ptn_refresh.Size = new Size(43, 29);
-            ptn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
-            ptn_refresh.TabIndex = 119;
-            ptn_refresh.TabStop = false;
-            ptn_refresh.Click += ptn_refresh_Click;
+            btn_refresh.Image = Properties.Resources.refresh_buttons;
+            btn_refresh.Location = new Point(616, 41);
+            btn_refresh.Margin = new Padding(3, 2, 3, 2);
+            btn_refresh.Name = "btn_refresh";
+            btn_refresh.Size = new Size(43, 29);
+            btn_refresh.SizeMode = PictureBoxSizeMode.Zoom;
+            btn_refresh.TabIndex = 119;
+            btn_refresh.TabStop = false;
+            btn_refresh.Click += btn_refresh_Click;
             // 
             // btn_search
             // 
@@ -196,7 +196,7 @@
             Text = "P_CompanyList";
             pn_parents.ResumeLayout(false);
             pn_parents.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)ptn_refresh).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btn_refresh).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtGrid_companyList).EndInit();
             ResumeLayout(false);
         }
@@ -206,7 +206,7 @@
         private Panel pn_parents;
         private Button btn_back;
         private Label lb_Info;
-        private PictureBox ptn_refresh;
+        private PictureBox btn_refresh;
         private Button btn_search;
         private Button btn_add;
         private DataGridView dtGrid_companyList;

@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_expiredcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_expiredcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\dao_pttkhttt\\companydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\dao_pttkhttt\\companydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_expiredcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_expiredcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_updatecompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_updatecompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_updateapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_updateapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\dto_pttkhttt\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\dto_pttkhttt\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_updatecompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_updatecompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_addcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_addcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_project_pttkhttt\\mainbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\mainbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_project_pttkhttt\\personnel\\p_homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|d:\\hk2_2023_2024\\pttkhttt\\05_project_pttkhttt\\05_project_pttkhttt\\personnel\\p_updateapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50DBFE06-DF11-4EBF-83E2-18CC7EEACEA0}|05_Project_PTTKHTTT\\05_Project_PTTKHTTT.csproj|solutionrelative:05_project_pttkhttt\\personnel\\p_updateapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 183,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,102 +42,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanyDAO.cs",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\DAO_PTTKHTTT\\CompanyDAO.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\DAO_PTTKHTTT\\CompanyDAO.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\DAO_PTTKHTTT\\CompanyDAO.cs",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\DAO_PTTKHTTT\\CompanyDAO.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwDsAAAAeAAAA",
+              "DocumentIndex": 0,
+              "Title": "P_ExpiredContract.cs",
+              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs",
+              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs",
+              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs",
+              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAmwGEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:33:57.038Z",
+              "WhenOpened": "2024-07-08T14:13:31.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "P_ExpiredContract.cs [Design]",
+              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs",
+              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs",
+              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs [Design]",
+              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_ExpiredContract.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T14:13:17.283Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "P_UpdateApplication.cs",
+              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs",
+              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs",
+              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs",
+              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T14:12:33.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Company.cs",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\DTO_PTTKHTTT\\Company.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\DTO_PTTKHTTT\\Company.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\DTO_PTTKHTTT\\Company.cs",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\DTO_PTTKHTTT\\Company.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAvwD0AAAAJAAAA",
+              "Title": "P_UpdateApplication.cs [Design]",
+              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs",
+              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs",
+              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs [Design]",
+              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_UpdateApplication.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:33:46.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "P_UpdateCompany.cs",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:31:39.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "P_UpdateCompany.cs [Design]",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs [Design]",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_UpdateCompany.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:31:36.745Z",
+              "WhenOpened": "2024-07-08T14:12:19.504Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Program.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Program.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Program.cs",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:30:20.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "P_AddCompany.cs [Design]",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs [Design]",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_AddCompany.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:30:02.689Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainBase.cs [Design]",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\MainBase.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\MainBase.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\MainBase.cs [Design]",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\MainBase.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T07:53:29.334Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "P_Homepage.cs [Design]",
-              "DocumentMoniker": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_Homepage.cs",
-              "RelativeDocumentMoniker": "05_Project_PTTKHTTT\\Personnel\\P_Homepage.cs",
-              "ToolTip": "D:\\HK2_2023_2024\\PTTKHTTT\\05_Project_PTTKHTTT\\05_Project_PTTKHTTT\\Personnel\\P_Homepage.cs [Design]",
-              "RelativeToolTip": "05_Project_PTTKHTTT\\Personnel\\P_Homepage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T07:56:05.792Z"
             }
           ]
         }
