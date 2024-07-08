@@ -47,7 +47,7 @@ namespace _05_Project_PTTKHTTT.Personnel
         {
             this.Close();
         }
-        private void ptn_refresh_Click(object sender, EventArgs e)
+        private void btn_refresh_Click(object sender, EventArgs e)
         {
             tb_compName.Clear();
             dtGrid_companyList.DataSource = companyList;
