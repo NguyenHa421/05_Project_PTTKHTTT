@@ -34,6 +34,8 @@
             tb_user = new TextBox();
             pn_user = new Panel();
             pn_pass = new Panel();
+            pic_hide = new PictureBox();
+            pic_show = new PictureBox();
             tb_pass = new TextBox();
             btn_login = new Button();
             btn_register = new Button();
@@ -43,6 +45,8 @@
             ((System.ComponentModel.ISupportInitialize)pic_main).BeginInit();
             pn_user.SuspendLayout();
             pn_pass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_hide).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_show).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_logo).BeginInit();
             SuspendLayout();
             // 
@@ -103,12 +107,36 @@
             // pn_pass
             // 
             pn_pass.BackgroundImage = Properties.Resources.Line;
+            pn_pass.Controls.Add(pic_hide);
+            pn_pass.Controls.Add(pic_show);
             pn_pass.Controls.Add(tb_pass);
             pn_pass.Location = new Point(541, 278);
             pn_pass.Name = "pn_pass";
             pn_pass.Size = new Size(321, 50);
             pn_pass.TabIndex = 6;
-            //
+            // 
+            // pic_hide
+            // 
+            pic_hide.Image = Properties.Resources.eye1;
+            pic_hide.Location = new Point(268, 6);
+            pic_hide.Name = "pic_hide";
+            pic_hide.Size = new Size(41, 38);
+            pic_hide.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_hide.TabIndex = 12;
+            pic_hide.TabStop = false;
+            pic_hide.Click += pic_hide_Click;
+            // 
+            // pic_show
+            // 
+            pic_show.Image = Properties.Resources.visual1;
+            pic_show.Location = new Point(268, 6);
+            pic_show.Name = "pic_show";
+            pic_show.Size = new Size(41, 38);
+            pic_show.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_show.TabIndex = 11;
+            pic_show.TabStop = false;
+            pic_show.Click += pic_show_Click;
+            // 
             // tb_pass
             // 
             tb_pass.BackColor = Color.White;
@@ -197,6 +225,8 @@
             pn_user.PerformLayout();
             pn_pass.ResumeLayout(false);
             pn_pass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_hide).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_show).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -215,5 +245,7 @@
         private Button btn_register;
         private Panel pn_line;
         private PictureBox pic_logo;
+        private PictureBox pic_show;
+        private PictureBox pic_hide;
     }
 }

@@ -14,6 +14,7 @@ namespace _05_Project_PTTKHTTT
         {
             InitializeComponent();
             Load();
+
         }
         bool Login_Success(string user, string pass)
         {
@@ -28,8 +29,8 @@ namespace _05_Project_PTTKHTTT
             tb_pass.UseSystemPasswordChar = true;
             tb_user.Text = "";
             tb_pass.Text = "";
-            //pic_Hide.Visible = false;
-            //pic_Show.Visible = true;
+            pic_hide.Visible = true;
+            pic_show.Visible = false;
         }
 
 
@@ -69,5 +70,18 @@ namespace _05_Project_PTTKHTTT
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
         }
 
+        private void pic_show_Click(object sender, EventArgs e)
+        {
+            pic_hide.Visible = true;
+            pic_show.Visible = false;
+            tb_pass.UseSystemPasswordChar = true;
+        }
+
+        private void pic_hide_Click(object sender, EventArgs e)
+        {
+            pic_hide.Visible = false;
+            pic_show.Visible = true;
+            tb_pass.UseSystemPasswordChar = false;
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace _05_Project_PTTKHTTT.Candidate
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
         }
     }

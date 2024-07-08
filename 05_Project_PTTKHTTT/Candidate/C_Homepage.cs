@@ -16,21 +16,32 @@ namespace _05_Project_PTTKHTTT.Candidate
         {
             InitializeComponent();
         }
-
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pn_parents.Controls.Add(childForm);
+            pn_parents.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void btn_findjob_Click(object sender, EventArgs e)
         {
-            Candidate.C_ViewJob view_Job = new Candidate.C_ViewJob();
-            this.Hide();
-            view_Job.ShowDialog();
-            this.Show();
+            OpenChildForm(new Candidate.C_ViewJob());
+           
         }
 
         private void btn_applied_Click(object sender, EventArgs e)
         {
-            Candidate.C_AppliedCV appliedCV = new Candidate.C_AppliedCV();
-            this.Hide();
-            appliedCV.ShowDialog();
-            this.Show();
+            OpenChildForm(new Candidate.C_AppliedCV());
+           
         }
     }
 }

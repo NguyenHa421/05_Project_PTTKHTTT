@@ -22,6 +22,10 @@ namespace _05_Project_PTTKHTTT.Candidate
 
         public void Load()
         {
+            pic_hide.Visible = true;
+            pic_show.Visible = false;
+            pic_hide2.Visible = true;
+            pic_show2.Visible = false;
             tb_password.UseSystemPasswordChar = true;
             tb_confirm.UseSystemPasswordChar = true;
         }
@@ -45,10 +49,10 @@ namespace _05_Project_PTTKHTTT.Candidate
             cdd.Address = tb_address.Text;
             string pwd = tb_password.Text;
             string confirm_pwd = tb_confirm.Text;
-            
+
             if (pwd != confirm_pwd)
             {
-                MessageBox.Show("Mật khẩu và nhập lại mật khầu không giống nhau. Vui lòng kiểm tra lại.","Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Mật khẩu và nhập lại mật khầu không giống nhau. Vui lòng kiểm tra lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             try
@@ -66,6 +70,34 @@ namespace _05_Project_PTTKHTTT.Candidate
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pic_show_Click(object sender, EventArgs e)
+        {
+            pic_show.Visible = false;
+            pic_hide.Visible = true;
+            tb_password.UseSystemPasswordChar = true;
+        }
+
+        private void pic_hide_Click(object sender, EventArgs e)
+        {
+            pic_show.Visible = true;
+            pic_hide.Visible = false;
+            tb_password.UseSystemPasswordChar = false;
+        }
+
+        private void pic_show2_Click(object sender, EventArgs e)
+        {
+            pic_show2.Visible = false;
+            pic_hide2.Visible = true;
+            tb_confirm.UseSystemPasswordChar = true;
+        }
+
+        private void pic_hide2_Click(object sender, EventArgs e)
+        {
+            pic_show2.Visible = true;
+            pic_hide2.Visible = false;
+            tb_confirm.UseSystemPasswordChar = false;
         }
     }
 }
