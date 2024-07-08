@@ -99,6 +99,8 @@ namespace _05_Project_PTTKHTTT.Personnel
 
         private void btn_next_Click(object sender, EventArgs e)
         {
+            if (clickedRow < 0)
+                return;
             int quantity;
             try
             {

@@ -83,5 +83,10 @@ namespace _05_Project_PTTKHTTT
             pic_show.Visible = true;
             tb_pass.UseSystemPasswordChar = false;
         }
+
+        private void pn_user_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
