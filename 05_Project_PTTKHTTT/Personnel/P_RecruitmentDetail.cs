@@ -59,6 +59,8 @@ namespace _05_Project_PTTKHTTT.Personnel
 
         private void dtGrid_vacancyList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0)
+                return;
             tb_criteria.Text = jobList[e.RowIndex].criteria;
         }
     }
