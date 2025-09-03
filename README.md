@@ -4,15 +4,15 @@ This project aims to design and implement a management system that covers the en
 Project Scope
 The project consists of the following components:
 1. Business Analysis
-Development and specification of business use case diagrams.
-Activity diagrams.
-Object diagrams.
+   Development and specification of business use case diagrams.
+   Activity diagrams.
+   Object diagrams.
 2. System Analysis
-Development and specification of system use case diagrams.
+   Development and specification of system use case diagrams.
 3. System Design
-Relational database design.
-User interface design.
-Analysis-level class diagrams.
-Sequence diagrams.
+   Relational database design.
+   User interface design.
+   Analysis-level class diagrams.
+   Sequence diagrams.
 4. System Implementation
-Development of system interfaces using C# WinForms.
+   Development of system interfaces using C# WinForms.
