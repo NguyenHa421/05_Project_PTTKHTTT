@@ -1,5 +1,5 @@
 Project Objective:
-This project aims to design and implement a management system that covers the entire development lifecycle—from business analysis to system deployment. The objective is to build a functional application with a well-structured architecture, a relational database, and a user-friendly interface, ensuring both practicality and scalability.
+This project aims to design and implement a management system that covers the entire development lifecycle—from business analysis to system deployment. The objective is to build a functional application with a well-structured architecture, a relational database, and a user-friendly interface.
 
 Project Scope
 The project consists of the following components:
